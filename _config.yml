@@ -104,4 +104,6 @@ theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/KawYang/KawYang.github.io.git
+  branch: gh-pages
