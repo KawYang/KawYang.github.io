@@ -76,10 +76,10 @@ music:
   title: #非吸底模式有效
     enable: true
     show: 听听音乐
-  autoHide: true    # hide automaticaly
+  autoHide: false    # hide automaticaly
   server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
-  id: 503838841     #require	song id / playlist id / album id / search keyword
+  id: 3170279717    #require	song id / playlist id / album id / search keyword
   fixed: true       # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: '#42b983'
@@ -88,7 +88,7 @@ music:
   preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: true  # 列表默认折叠
-  hideLrc: true     # 隐藏歌词
+  hideLrc: false     # 隐藏歌词
 
 # Whether to display the videos.
 # 是否在首页显示视频.
@@ -163,7 +163,7 @@ code:
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
-  enable: true
+  enable: false
   title: 你的赏识是我前进的动力
   # wechat: /medias/reward/wechat.png
   # alipay: /medias/reward/alipay.jpg
@@ -347,7 +347,7 @@ minivaline:
   NoRecordIP: false # Do not record commenter IP.
   visitor: true # Article reading statistics.
   maxNest: 6 # Sub-comment maximum nesting depth.
-  pageSize: 6 # Pagination size.
+  pageSize: 12 # Pagination size.
   adminEmailMd5: de8a7aa53d07e6b6bceb45c64027763d # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode]
   tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
     - 管理员
@@ -400,7 +400,7 @@ verifyPassword:
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
 # 不蒜子(http://busuanzi.ibruce.info/) 网站统计
 busuanziStatistics:
-  enable: true
+  enable: false
   totalTraffic: true # 总访问量
   totalNumberOfvisitors: true # 总人次
 

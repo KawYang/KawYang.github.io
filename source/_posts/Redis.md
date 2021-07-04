@@ -3,7 +3,6 @@ abbrlink: bae4ff13
 
 ---
 
-
 # Redis(Remote Dictionary Server)
 
 > Key - Value  的非关系型数据库，C语言编写的，提供多种持久化机制，基于内存的存储的，提供了主从，哨兵以及集群的搭建方式，更加方便的横向和垂直拓展。
