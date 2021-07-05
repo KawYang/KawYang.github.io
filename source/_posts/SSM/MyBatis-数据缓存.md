@@ -2,15 +2,11 @@
 title: MyBatis-数据缓存
 tags:
   - MyBatis
-  - 缓存
 abbrlink: 579a3ded
-categories: 框架
+categories: MyBatis
 date: 2020-07-06 16:08:04
+summary: 将查询过的数据进行缓存，可以减少数据库访问的次数，减轻负担服务器的，同时也可以提高数据访问时间。
 ---
-
-> 将查询过的数据进行缓存，可以减少数据库访问的次数，减轻负担服务器的，同时也可以提高数据访问时间。
-
-<!-- more -->
 
 ## 一级缓存
 
@@ -176,7 +172,7 @@ public class FindCache {
 
 结果:
 
-```
+```shell
 Opening JDBC Connection
 Created connection 392918519.
 Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@176b75f7]

@@ -1,7 +1,7 @@
 ---
 title: Magic-API 学习笔记
-categories: 框架
-tags: Spring
+categories: 开源框架
+tags: Magic-API
 abbrlink: '36e0671'
 date: 2020-07-08 15:40:07
 ---

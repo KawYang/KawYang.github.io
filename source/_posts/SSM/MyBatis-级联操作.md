@@ -2,17 +2,14 @@
 title: MyBatis-级联操作
 tags:
   - MyBatis
-  - SQL
 abbrlink: fb315360
 date: 2020-06-21 09:30:21
-categories: 框架
+cover: true
+
+top: false
+categories: MyBatis
+summary: 本文介绍了`MyBatis`的级联操作，通过查询多张表完成数据的获取，关键在于练习 `resultMap`、`association`、`collection` 标签。
 ---
-
-> 本文介绍了`MyBatis`的级联操作，通过查询多张表完成数据的获取，关键在于练习 `resultMap`、`association`、`collection` 标签。
-
-
-<!-- more -->
-
 
 # MyBatis 级联操作
 
@@ -149,6 +146,7 @@ association🏷️ : 注入内嵌对象，`javaType` 将内嵌对象映射到实
 ### 实体类
 
 - ClassesStu
+
 ```java
 @Data
 @AllArgsConstructor
@@ -158,7 +156,6 @@ public class ClassesStu{
 	String name;
 	List<Student> students;
 }
-
 ```
 
 ### Repository
@@ -212,9 +209,11 @@ collection🏷️ : 将查询的 `cid & cname` 相同的结果，将 sid 和 sna
 
 ## 多对多 (goods <-> consumers)
 
-	一种商品可以被多个消费者购买
-	一个消费者可以购买多个商品
-	商品与消费者事多对多的关系。
+```vim
+一种商品可以被多个消费者购买
+一个消费者可以购买多个商品
+商品与消费者事多对多的关系。
+```
 
 ### 数据表
 
@@ -251,7 +250,7 @@ insert into con_good (id, gid, cid) VALUES (1,1,1),(2,3,2),(3,1,3),(4,2,1),(5,4,
 
 ### Mapper
 
-	多对多相当于两个一对多的关系，需要配置两个xml文件
+> 多对多相当于两个一对多的关系，需要配置两个xml文件
 
 - IGoodMapper
 ```xml
@@ -280,6 +279,7 @@ insert into con_good (id, gid, cid) VALUES (1,1,1),(2,3,2),(3,1,3),(4,2,1),(5,4,
 ```
 
 - IConsumerMapper
+
 ```xml
 <mapper namespace="com.kawyang.repository.IConsumerRepository">
     <resultMap id="consumer" type="com.kawyang.entity.Consumer" >

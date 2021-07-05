@@ -1,9 +1,11 @@
 ---
 title: JavaScript-学习总结
-categories: 文章类型
+categories: Web
 abbrlink: 20425d10
 date: 2020-09-25 10:51:42
 tags:
+    - Web
+    - JavaScript
 ---
 
 > 

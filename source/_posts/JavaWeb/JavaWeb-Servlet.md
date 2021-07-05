@@ -2,7 +2,6 @@
 title: JavaWeb-Servlet
 categories: JavaWeb
 tags:
-  - Servlet
   - JavaWeb
 abbrlink: 3dd30874
 date: 2020-07-11 16:09:23

@@ -1,6 +1,6 @@
 ---
-title: SpringMVC
-categories: 文章类型
+title: Spring MVC
+categories: Spring
 tags:
   - Spring MVC
 abbrlink: ae0f95e0

@@ -1,10 +1,12 @@
 ---
 title: Spring-IoC(控制反转)&DI(依赖注入)
-categories: 框架
-tags: Spring
+categories: Spring
+tags: 
+    - Spring
+    - IoC
+    - DI
 abbrlink: 6c92115f
 date: 2020-07-08 15:40:07
-
 ---
 
 > 本文主要记录了 `Spring` 框架的 `IoC & ID` 基本内容。

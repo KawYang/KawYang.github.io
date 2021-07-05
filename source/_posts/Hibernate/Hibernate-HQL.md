@@ -1,9 +1,12 @@
 ---
 title: Hibernate-HQL(Hibernate Query Language)
-categories: 文章类型
+categories: Java
 abbrlink: 387c2947
 date: 2020-08-22 17:57:05
 tags:
+  - Java
+  - Hibernate
+  - 
 ---
 
 > 面向对象的数据查询,直接使用实体类的属性实现查询。

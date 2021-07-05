@@ -1,11 +1,11 @@
 ---
 title: Spring-AOP
-categories: 框架
+categories: Spring
 abbrlink: 97375e6e
 date: 2020-07-08 16:47:29
 tags: 
 	- Spring
-	- AOP
+  - AOP
 ---
 
 > AOP

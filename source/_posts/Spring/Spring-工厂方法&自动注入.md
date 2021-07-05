@@ -1,6 +1,6 @@
 ---
 title: Spring-工厂方法
-categories: 框架
+categories: Spring
 abbrlink: 6c92115f
 tags: Spring
 date: 2020-07-08 16:40:37

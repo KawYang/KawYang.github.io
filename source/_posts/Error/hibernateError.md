@@ -3,11 +3,8 @@ abbrlink: 53f99461
 tags:
 	- JavaEE
 categories: JavaWeb
-
+title: Hibernater Error
 ---
-# Hibernater Error
-
-<!-- more -->
 
 ## javax/xml/bind/JAXBException
 

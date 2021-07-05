@@ -2,10 +2,9 @@
 title: lambda入门
 abbrlink: 1ba1fa2d
 categories: Java
+cover: true
+summary: 如何让你的代码显得高大上，当然用上 lambda 表达式了。lambda 能够让代码更加简介。
 ---
-> 总结 lambda 使用
-
-<!-- more -->
 ## @FunctionalInterface
 
 ```java

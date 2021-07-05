@@ -164,7 +164,7 @@ live2d:
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
   model:
-    use: live2d-widget-model-hibiki
+    use: live2d-widget-model-shizuku
     scale: 1
     hHeadPos: 0.5
     vHeadPos: 0.618
@@ -173,7 +173,7 @@ live2d:
     # use: ./wives/wanko # 相对于博客根目录的路径
     # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
   display:
-    superSample: 2l
+    superSample: 1l
     width: 150
     height: 350
     position: right
@@ -185,3 +185,5 @@ live2d:
   react:
     opacityDefault: 0.7
     opacityOnHover: 0.8
+
+# skip_render: "_posts/(3条消息) markdown常见数学符号和运算_MyNotes-CSDN博客_markdown数学符号.html"

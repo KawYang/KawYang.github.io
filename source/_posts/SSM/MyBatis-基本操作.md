@@ -2,13 +2,10 @@
 title: MyBatis-基本操作
 tags: MyBatis
 abbrlink: 8661f06f
-categories: 框架
+categories: MyBatis
 date: 2020-06-20 16:47:42
+summary: MyBatis 是一款优秀的半自动的轻量级的持久层框架。本文介绍了 `MyBatis` 的基本项目的创建和使用。
 ---
-
-> MyBatis 是一款优秀的半自动的轻量级的持久层框架。本文介绍了 `MyBatis` 的基本项目的创建和使用。
-
-<!-- more -->
 
 ## 创建Maven项目
 
