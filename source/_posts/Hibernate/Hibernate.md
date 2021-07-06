@@ -3,13 +3,7 @@ abbrlink: ffb50895
 title: Hibernate
 
 ---
-
-
-
 > ORM 框架
-
-
-
 <!-- more -->
 
 ## 操作

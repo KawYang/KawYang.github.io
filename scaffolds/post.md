@@ -5,11 +5,11 @@ author: KawYang
 img: 
 top: false
 cover: false
-coverImg: /images/1.jpg
+coverImg: 
 toc: false
 mathjax: true
-summary: 摘要
-categories: 分类
+summary: 
+categories: 
 tags:
   - blog
 ---
