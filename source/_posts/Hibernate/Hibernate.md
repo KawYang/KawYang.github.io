@@ -17,7 +17,7 @@ title: Hibernate
 - jaxb-impl
 - jaxb-core
 - junit-jupiter
-- c3p0 》c3p0
+- c3p0-c3p0
 - lombok
 
 3.  创建 hibernate.cfg.xml
