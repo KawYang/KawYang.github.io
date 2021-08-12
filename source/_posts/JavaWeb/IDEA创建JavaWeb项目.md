@@ -6,7 +6,6 @@ cover: false
 coverImg: 
 toc: false
 mathjax: true
-summary: 
 categories: Java
 tags:
   - IDEA

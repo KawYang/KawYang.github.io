@@ -5,7 +5,6 @@ tags:
 abbrlink: 5882fb3c
 categories: MyBatis
 data: 2020-06-22 10:30:21
-summary: 本文讲述了模糊查询的操作方法，配置实体类全局路径方法等内容，主要对 `MyBatis` 的动态SQL查询方式进行了相关总结。
 
 ---
 

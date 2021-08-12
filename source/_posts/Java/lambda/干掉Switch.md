@@ -5,7 +5,6 @@ top: false
 cover: true
 toc: false
 mathjax: true
-summary: 对于前端页面的筛选查询，查询条件具有不确定性，不同的字段可能使用的条件也是不同的，需要对不同的字段创建不同的查询条件。
 categories: 优化
 tags:
   - Java

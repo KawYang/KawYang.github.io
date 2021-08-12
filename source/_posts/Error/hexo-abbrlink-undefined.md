@@ -11,7 +11,6 @@ cover: false
 coverImg: /images/1.jpg
 toc: false
 mathjax: true
-summary: 本文解决的问题： 安装 `hexo-abbrlink` 后，并配置 `abbrlink` 连接，出现 `undefined`问题，所有文章标题都指向同一篇文章，并且无法重新启动 hexo 服务。
 ---
 
 ## 错误信息Error
