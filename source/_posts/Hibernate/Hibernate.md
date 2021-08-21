@@ -1,10 +1,10 @@
 ---
 abbrlink: ffb50895
 title: Hibernate
-
+tag: JavaWeb
 ---
 > ORM 框架
-<!-- more -->
+
 > 显示数据局
 
 ## 操作

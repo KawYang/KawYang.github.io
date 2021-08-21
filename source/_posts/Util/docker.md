@@ -1,13 +1,12 @@
 ---
 title: Docker 入门
 abbrlink: fa8faa2e
+tag: docker
 ---
 
 
 
 # Docker入门[^菜鸟教程]
-
-<!-- more -->
 
 ## 关键词
 

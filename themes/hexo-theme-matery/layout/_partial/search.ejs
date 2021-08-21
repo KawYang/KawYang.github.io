@@ -11,6 +11,8 @@
 </div>
 
 <script type="text/javascript">
+var currPath = window.document.location.href;
+var pathName = window.document.location.pathname;
 $(function () {
     var searchFunc = function (path, search_id, content_id) {
         'use strict';
@@ -64,7 +66,7 @@ $(function () {
                         }
                         // show search results
                         if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            str += "<li><a href='" +currPath.substring(0,currPath.indexOf(pathName)) +data_url.substring(1,data_url.length)+ "' class='search-result-title'>" + data_title + "</a>";
                             var content = data.content.trim().replace(/<[^>]+>/g, "");
                             if (first_occur >= 0) {
                                 // cut out 100 characters
