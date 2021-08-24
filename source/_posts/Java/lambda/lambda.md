@@ -1,7 +1,7 @@
 ---
 title: lambda入门
 abbrlink: 1ba1fa2d
-categories: Java
+categories: Lambda
 cover: false
 tag:
     - lambda

@@ -6,7 +6,7 @@ cover: false
 coverImg: 
 toc: false
 mathjax: true
-categories: Java
+categories: Web
 tags:
   - IDEA
   - JavaWeb

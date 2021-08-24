@@ -2,6 +2,7 @@
 abbrlink: ffb50895
 title: Hibernate
 tag: JavaWeb
+categories: Hibernate
 ---
 > ORM 框架
 

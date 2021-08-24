@@ -1,6 +1,6 @@
 ---
 title: JavaWeb-Servlet
-categories: JavaWeb
+categories: Web
 tags:
   - JavaWeb
 abbrlink: 3dd30874

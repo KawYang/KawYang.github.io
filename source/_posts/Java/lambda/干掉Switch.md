@@ -5,7 +5,7 @@ top: false
 cover: true
 toc: false
 mathjax: true
-categories: 优化
+categories: Lambda
 tags:
   - Java
   - 优化
@@ -184,5 +184,4 @@ public class ThirdPartLogServiceImpl implements ThirdPartLogService {
 > **总结**:  采用表驱动的方式，将不同的查询条件，`分发`到不同的函数式方法中，完成条件的拼接。
 >
 > 在 makeQuery 方法中 遍历一次就可完成 条件的拼接。时间复杂度为 $O(n)$
-
 

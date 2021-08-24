@@ -1,6 +1,6 @@
 ---
 title: Hibernate-HQL(Hibernate Query Language)
-categories: Java
+categories: Hibernate
 abbrlink: 387c2947
 date: 2020-08-22 17:57:05
 tags:
@@ -46,11 +46,11 @@ List<Student> list = query.list();
 
 ```sql
   from Student // 从 Student 关联的 数据表进行查询 
-  ```
+```
 
 ```sql
   from Student as s // 表格取别名
-  ```
+```
 
 ```sql
   from Student s //省略 as
@@ -60,25 +60,25 @@ List<Student> list = query.list();
 
 ```sql
   select s from Student as s // 查询全部信息
-  ```
+```
 
 ```sql
   select s.id, s.name from Student as s // 查询相应属性
-  ```
+```
 
 ```sql
   select new Student(s.id,s.name) from Student s// 将数据封装成对象,必须有相应的构造函数
-  ```
+```
 
 ### where & 不同参数的设置形式
 
 ```sql
   where s.age between 18 and 20
-  ```
+```
 
 ```sql
   where s.age between  :ageMin and :ageMax
-  ```
+```
 
   > 使用 `:name ` 的形式 设置HQL 中参数
   >
@@ -86,7 +86,7 @@ List<Student> list = query.list();
 
 ```sql
   where s.age between  ? and ?
-  ```
+```
 
   > 使用 `?` 的形式设置 参数
   >
@@ -94,7 +94,7 @@ List<Student> list = query.list();
 
 ```sql
   where s.age in (:ids)
-  ```
+```
 
   
 
@@ -106,11 +106,11 @@ List<Student> list = query.list();
 
 ```sql
   select count( * ) from Strudent
-  ```
+```
 
 ```sql
   select min(s.id) from Student s
-  ```
+```
 
 ### order by
 
@@ -119,7 +119,7 @@ List<Student> list = query.list();
 
 ```sql
   where s.age> 20 order by s.name desc
-  ```
+```
 
   
 
@@ -130,17 +130,17 @@ List<Student> list = query.list();
 
 ```sql
   select s.name , d.name from Student s [inner] join s.classes d;
-  ```
+```
 
 ```sql
   select s.name , d.name from Student s left [outer] join s.classes d;
-  ```
+```
 
 ### distinct 过滤掉重复值
 
 ```sql
   select distinct s.age from Student s 
-  ```
+```
 
 ## Query使用
 

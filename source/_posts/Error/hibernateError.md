@@ -2,7 +2,7 @@
 abbrlink: 53f99461
 tags:
 	- JavaEE
-categories: JavaWeb
+categories: Error
 title: Hibernater Error
 ---
 

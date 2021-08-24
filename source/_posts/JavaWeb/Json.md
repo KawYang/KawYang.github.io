@@ -1,6 +1,6 @@
 ---
 title: Json
-categories: JavaWeb
+categories: Web
 tags:
   - Java Web
 abbrlink: cb358a7b

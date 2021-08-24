@@ -4,7 +4,7 @@ tags:
   - hexo
   - Error
 abbrlink: b3b09752
-categories: hexo
+categories: Error
 date: 2020-07-07 00:13:40
 top: false
 cover: false
