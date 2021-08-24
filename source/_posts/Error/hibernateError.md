@@ -4,6 +4,7 @@ tags:
 	- JavaEE
 categories: Error
 title: Hibernater Error
+date:  2020-04-07 23:15:18
 ---
 
 ## javax/xml/bind/JAXBException

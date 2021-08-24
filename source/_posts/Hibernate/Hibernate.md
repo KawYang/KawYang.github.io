@@ -3,6 +3,7 @@ abbrlink: ffb50895
 title: Hibernate
 tag: JavaWeb
 categories: Hibernate
+date:  2020-04-07 23:15:18
 ---
 > ORM 框架
 
