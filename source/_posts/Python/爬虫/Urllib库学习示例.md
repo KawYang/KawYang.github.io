@@ -11,11 +11,15 @@ tags:
   - 爬虫
 abbrlink: 335fcf78
 date: 2020-08-29 22:47:42
-img:
-coverImg:
+img: https://gitee.com/KawYang/image/raw/master/img/20210829232938.png
+coverImg: https://gitee.com/KawYang/image/raw/master/img/20210829232938.png
 ---
 
 # urllib库详解
+
+> [Urllib](https://docs.python.org/3/library/urllib.html)
+>
+> 说明: 本文章从 jupyter-notebook 导出，代码示例后边附带执行结果
 
 ## urlopen
 

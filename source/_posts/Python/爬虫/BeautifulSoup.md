@@ -11,13 +11,15 @@ tags:
 categories: Python
 abbrlink: f6b0f828
 date: 2020-08-28 21:03:01
-img:
+img: https://gitee.com/KawYang/image/raw/master/img/image-20210829231533624.png
 coverImg:
 
 ---
 
 # BeautifulSoup
 
+> [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+>
 > 说明： 本文章从 jupyter-notebook 导出，代码示例后边附带执行结果
 
 ## 基本使用

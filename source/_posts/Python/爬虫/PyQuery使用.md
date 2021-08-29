@@ -11,12 +11,14 @@ tags:
     - Python
 abbrlink: d622284c
 date: 2020-08-29 21:56:13
-img:
+img: https://gitee.com/KawYang/image/raw/master/img/20210829231915.png
 coverImg:
 ---
 
 # PyQuery
 
+> [PyQuery](https://pythonhosted.org/pyquery/)
+>
 > 说明： 本文章从 jupyter-notebook 导出，代码示例后边附带执行结果
 
 ## 初始化

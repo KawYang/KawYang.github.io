@@ -11,11 +11,15 @@ tags:
   - 爬虫
 abbrlink: a31ea4d6
 date: 2020-08-29 22:36:30
-img:
+img: https://gitee.com/KawYang/image/raw/master/img/20210829232456.png
 coverImg:
 ---
 
 # Selenium
+
+> [Selenium](https://www.selenium.dev/)
+>
+> 说明: 本文章从 jupyter-notebook 导出，代码示例后边附带执行结果
 
 ## 基本使用
 

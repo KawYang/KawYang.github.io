@@ -11,12 +11,14 @@ tags:
     - Python
 abbrlink: 7e933fdb
 date: 2020-08-29 22:11:30
-img:
+img: https://gitee.com/KawYang/image/raw/master/img/20210829232303.png
 coverImg:
 ---
 
 # Requests库详解
 
+> [Requests -PyPi](https://pypi.org/project/requests/)
+>
 > 说明: 本文章从 jupyter-notebook 导出，代码示例后边附带执行结果
 
 > 用法方便，基于urllib库
