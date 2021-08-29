@@ -8,7 +8,7 @@ cover: false
 coverImg: 
 toc: true
 mathjax: true
-categories: 
+categories: 分类
 tags:
-  - blog
+  - 标签
 ---
