@@ -298,11 +298,11 @@ gitalk:
 # Gitment 评论模块的配置，默认为不激活
 gitment:
   enable: false
-  owner:
-  repo:
+  owner: 
+  repo: 
   oauth:
-    clientId:
-    clientSecret:
+    clientId: 
+    clientSecret: 
 
 # disqus config, default disabled
 # Disqus评论模块的配置，默认为不激活
@@ -320,13 +320,13 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:
-  appKey:
+  enable: true
+  appId: usOHr6z8rRPsvixoXLTcGY31-gzGzoHsz
+  appKey: xl8GJPtfGW61YDG075q2qp0D
   notify: false
   verify: false
   visitor: true
-  avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  avatar: 'monsterid' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 9
   placeholder: 'just go go' # Comment Box placeholder
   background: /medias/comment_bg.png
@@ -539,7 +539,7 @@ canvas_nest:
 
 # 背景静止彩带.
 ribbon:
-  enable: false
+  enable: true
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
@@ -606,7 +606,7 @@ jsDelivr:
   
 # 网站背景图
 background:
-  enable: true
+  enable: false
   url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg"
 
 # 说说 https://artitalk.js.org/
