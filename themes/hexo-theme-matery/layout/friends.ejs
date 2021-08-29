@@ -226,15 +226,15 @@
                 </article>
             </div>
         </div>
-
-        <% if (page.content && page.content.length > 0) { %>
+<!-- firends 页面不显示其他内容 -->
+        <!-- <% if (page.content && page.content.length > 0) { %>
             <div class="card">
                 <div class="card-content">
                     <%- page.content %>
                 </div>
             </div>
-        <% } %>
-
+        <% } %> -->
+ 
         <div class="card">
 
             <% if (theme.gitalk && theme.gitalk.enable) { %>
@@ -257,7 +257,7 @@
             <%- partial('_partial/valine') %>
             <% } %>
 
-        </div>
+        </div> 
     </div>
 </main>
 
