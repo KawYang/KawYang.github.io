@@ -3,7 +3,7 @@ title: 干掉Switch
 author: KawYang
 top: false
 cover: true
-toc: false
+toc: true
 mathjax: true
 categories: Lambda
 tags:

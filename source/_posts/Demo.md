@@ -3,7 +3,7 @@ title: Demo
 author: KawYang
 top: false
 cover: false
-toc: false
+toc: true
 mathjax: true
 tags:
   - blog

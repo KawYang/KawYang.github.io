@@ -6,7 +6,7 @@ img:
 top: false
 cover: false
 coverImg: 
-toc: false
+toc: true
 mathjax: true
 categories: 
 tags:
