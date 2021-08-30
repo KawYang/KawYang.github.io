@@ -10,7 +10,7 @@ top: false
 cover: false
 coverImg: /images/1.jpg
 toc: true
-mathjax: true
+mathjax: false
 ---
 
 ## 错误信息Error

@@ -5,7 +5,7 @@ top: false
 cover: false
 coverImg: 
 toc: true
-mathjax: true
+mathjax: false
 categories: Web
 tags:
   - IDEA

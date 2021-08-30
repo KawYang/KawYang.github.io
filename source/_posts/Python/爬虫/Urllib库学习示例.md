@@ -4,7 +4,7 @@ author: KawYang
 top: false
 cover: false
 toc: true
-mathjax: true
+mathjax: false
 categories: Python
 tags:
   - Python

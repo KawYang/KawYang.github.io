@@ -4,7 +4,7 @@ author: KawYang
 top: false
 cover: true
 toc: true
-mathjax: true
+mathjax: false
 categories: Lambda
 tags:
   - Java

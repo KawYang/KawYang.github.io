@@ -7,7 +7,7 @@ top: false
 cover: false
 coverImg: 
 toc: true
-mathjax: true
+mathjax: false
 categories: 分类
 tags:
   - 标签
