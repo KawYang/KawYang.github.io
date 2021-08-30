@@ -1,7 +1,22 @@
-[{
-    "avatar": "https://gitee.com/KawYang/image/raw/master/img/20210830002158.png",
-    "name": "KawYang",
-    "introduction": "我的CSDN",
-    "url": "https://blog.csdn.net/liang520521",
-    "title": "逛一哈"
-}]
+[
+    {
+        "avatar": "https://gitee.com/KawYang/image/raw/master/img/20210830224732.png",
+        "name":"因雨而生",
+        "introduction": "追求代码层面的完美极致,对代码有深度洁癖,喜欢高效优雅的代码.",
+        "url": "https://www.borntorain.com/",
+        "title": "去学习"
+    },
+    {
+        "avatar": "https://gitee.com/KawYang/image/raw/master/img/20210830223207.png",
+        "name":"风和树里",
+        "introduction": "君子不忧不惧",
+        "url": "https://blog.csdn.net/baidu_40120883",
+        "title": "去探索"
+    }, {
+        "avatar": "https://gitee.com/KawYang/image/raw/master/img/20210830002158.png",
+        "name": "KawYang",
+        "introduction": "我的CSDN",
+        "url": "https://blog.csdn.net/liang520521",
+        "title": "逛一哈"
+    }
+]
