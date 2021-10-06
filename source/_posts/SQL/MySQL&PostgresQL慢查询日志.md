@@ -164,8 +164,39 @@ postgres=#
 
 
 ### 重新加载设置
-
+> 参考[<sup>1</sup>](#refer-anchor-1)
 ### 测试
+
+> 日志文件设置为 log 的存储位置为 `/var/lib/postgresql/data/log/`
+
+```shell
+$ psql -h localhost -U postgres -p 3456  
+Password for user postgres: 
+psql (13.4, server 11.4)
+Type "help" for help.
+
+postgres=# select pg_sleep(2);
+ pg_sleep 
+----------
+ 
+(1 row)
+
+postgres=# exit
+
+$ docker exec -it postgres /bin/bash                                                                                                                                                                                     22:45  
+bash-5.0# cd /var/lib/postgresql/data/log/
+bash-5.0# ls
+postgresql-2021-10-06_144542.log
+bash-5.0# cat postgresql-2021-10-06_144542.log 
+2021-10-06 14:45:42.013 UTC [19] LOG:  database system was shut down at 2021-10-06 14:45:40 UTC
+2021-10-06 14:45:42.016 UTC [1] LOG:  database system is ready to accept connections
+2021-10-06 14:47:05.283 UTC [42] FATAL:  password authentication failed for user "postgres"
+2021-10-06 14:47:05.283 UTC [42] DETAIL:  Password does not match for user "postgres".
+	Connection matched pg_hba.conf line 95: "host all all all md5"
+2021-10-06 14:47:22.512 UTC [44] LOG:  duration: 2001.597 ms  statement: select pg_sleep(2);
+bash-5.0# 
+
+```
 
 ### 配置修改错误后，docker 不能重启解决方案[<sup>2</sup>](#refer-anchor-2)
 
