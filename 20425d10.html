@@ -1,0 +1,1782 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta name="keywords" content="JavaScript-学习总结, KawYang">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>JavaScript-学习总结 | KawYang</title>
+    <link rel="icon" type="image/jpeg" href="https://gitee.com/KawYang/image/raw/master/img/photo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+
+
+<body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <span class="logo-span">KawYang</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <div class="logo-name">KawYang</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+    <link rel="stylesheet" href="/js/prism/prism.css">
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">JavaScript-学习总结</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Web/">
+                                <span class="chip bg-color">Web</span>
+                            </a>
+                        
+                            <a href="/tags/JavaScript/">
+                                <span class="chip bg-color">JavaScript</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Web/" class="post-category">
+                                Web
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-09-25
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    8 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv-1" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <blockquote>
+</blockquote>
+<h2 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h2><ul>
+<li>var : 在代码块中重新定义会覆盖外部变量,可以先使用后声明,重新声明后变量值不会丢失.</li>
+<li>let : 解决 var 作用域问题,let 在其声明的作用域内起作用.</li>
+<li>const : 常量不可修改,声明时必须初始化,类似java常量,对于对象类型,内部信息可以变化.<strong>const</strong> 关键字在不同作用域，或不同块级作用域中是可以重新声明赋值的:</li>
+</ul>
+<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><blockquote>
+<p>/表达式/[修饰符]</p>
+<ul>
+<li>修饰符<ul>
+<li>i - 执行对大小写不敏感皮配</li>
+<li>g - 全局搜索</li>
+<li>m - 执行多行匹配</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<pre><code class="lang-javascript">var patt = /Runnable/i;
+var s = &quot;Runnable&quot;;
+//
+var n = s.search(patt); // 返回匹配的位置
+var txt = s.replace(patt, &quot;replace_text&quot;); // 返回替换后的字符串
+// 
+patt.text(s); // 返回 Bool 类型,检测是否符合 patt 表达式格式
+patt.exec(s); // 返回 数组存放匹配的结果
+</code></pre>
+<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><h4 id="创建新HTML元素节点-appendChild"><a href="#创建新HTML元素节点-appendChild" class="headerlink" title="创建新HTML元素节点 - appendChild()"></a>创建新HTML元素节点 - appendChild()</h4><pre><code class="lang-javascript">let element = document.createElement(&quot;p&quot;);
+let node = document.createTextNode(&quot;内容&quot;);
+element.appendChild(node);
+</code></pre>
+<h4 id="创建新HTML-元素-insertBefore"><a href="#创建新HTML-元素-insertBefore" class="headerlink" title="创建新HTML 元素 - insertBefore()"></a>创建新HTML 元素 - insertBefore()</h4><pre><code class="lang-javascript">//在 element 元素内的 ele2 之前插入 ele1
+element.insertBefore(ele1, ele2);
+</code></pre>
+<pre><code class="lang-javascript">let element = document.getElementById(&quot;div1&quot;);
+let ele1 = document.createElement(&quot;p&quot;);
+let ele2 = document.getElementById(&quot;div1-p1&quot;);
+element.insertBefore(ele1, ele2);
+</code></pre>
+<h4 id="移除元素-removeChild"><a href="#移除元素-removeChild" class="headerlink" title="移除元素 - removeChild()"></a>移除元素 - removeChild()</h4><pre><code class="lang-javascript">let element = document.getElementById(&quot;div1&quot;);
+element.removeChild( document.getElementById(&quot;div1-p1&quot;) );
+</code></pre>
+<h4 id="替换元素-replaceChild"><a href="#替换元素-replaceChild" class="headerlink" title="替换元素 -  replaceChild()"></a>替换元素 -  replaceChild()</h4><pre><code class="lang-javascript">let element = document.getElementById(&quot;div1&quot;);
+let newEle = document.createElement(&quot;p&quot;).appendChild(document.creatTextNode(&quot;新元素&quot;));
+let oldEle = document.getElementById(&quot;div1-p1&quot;);
+element.replaceChild(newEle, oldEle);
+</code></pre>
+<h3 id="Collection集合"><a href="#Collection集合" class="headerlink" title="Collection集合"></a>Collection集合</h3><p>getElementsByTagName()</p>
+<pre><code class="lang-javascript">let elements = document.getElementsByTagName(&quot;p&quot;);
+for(let i = 0; i&lt;elements.length; i++)&#123;
+    elements[i].style.color = &quot;red&quot;;
+&#125;
+</code></pre>
+<blockquote>
+<p>HTMLCollection 类似数组而<code>不是数组</code></p>
+</blockquote>
+<h3 id="NodeLiet-对象"><a href="#NodeLiet-对象" class="headerlink" title="NodeLiet 对象"></a>NodeLiet 对象</h3><pre><code class="lang-javascript">let elements = document.querySelectorAll(&quot;p&quot;);
+for(let i = 0; i&lt;elements.length; i++)&#123;
+    elements[i].style.backgroundColor = &quot;red&quot;;
+&#125;
+</code></pre>
+<h5 id="区别"><a href="#区别" class="headerlink" title="区别:"></a>区别:</h5><p>HTMLCollection 可以通过 id , name 或 索引来获取</p>
+<p>NodeList 只能通过 索引 获取, 只有 NodeList 对象有包含属性节点和文本节点。</p>
+<h2 id="JavaScript对象"><a href="#JavaScript对象" class="headerlink" title="JavaScript对象"></a>JavaScript对象</h2><blockquote>
+<p>函数也可以是对象</p>
+</blockquote>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><h4 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h4><ul>
+<li>使用<code>Object</code>定义并创建对象</li>
+<li>使用<code>函数</code>来定义对象,然后创建新的对象实例</li>
+</ul>
+<pre><code class="lang-javascript">let obj = new Object();
+obj.firstName = &quot;Kaw&quot;;
+obj.lastName = &quot;Yang&quot;;
+obj.age = 21;
+// obj = &#123; firstName:&quot;Kaw&quot;, lastName:&quot;Yang&quot;, age:21&#125;
+
+// 使用对象构造器
+
+function Person (firstName , lastName , age)&#123;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+
+    function ChangeName(firstName)&#123;
+        this.firstName = firstName;
+    &#125;
+&#125;
+let person = new Person(&quot;&quot;, &quot;&quot;, 2);
+</code></pre>
+<blockquote>
+<p>JavaScript 是面向对象的, 但是不使用类</p>
+<p>JavaScript 基于 ==prototype(原型)== ，而不是基于类的。</p>
+</blockquote>
+<h4 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h4><pre><code class="lang-javascript">let person = &#123; firstName:&quot;Kaw&quot;, lastName:&quot;Yang&quot;, age:21&#125;;
+for(let x in person)&#123;
+    alert(x +&quot;==&gt;&quot; + person[x]);
+&#125;
+</code></pre>
+<h3 id="原型prototype对象"><a href="#原型prototype对象" class="headerlink" title="原型prototype对象"></a>原型prototype对象</h3><blockquote>
+<p>所有对象都是通过原型对象继承来的</p>
+</blockquote>
+<h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><p>通过原型对象,可以对一个已经存在的对象 de 构造器 添加属性.</p>
+<pre><code class="lang-javascript">function Person (firstName , lastName , age)&#123;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+
+    function ChangeName(firstName)&#123;
+        this.firstName = firstName;
+    &#125;
+&#125;
+Person.prototype.nationality = &quot;China&quot;;
+let person = new Person(&quot;Kaw&quot;, &quot;Yang&quot;, 21);
+for(let x in person)&#123;
+    alert(x +&quot;==&gt;&quot; + person[x]);
+&#125;
+</code></pre>
+<h3 id="数字对象-Number"><a href="#数字对象-Number" class="headerlink" title="数字对象 - Number"></a>数字对象 - Number</h3><h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><pre><code class="lang-javascript">var a=123;
+b=a.toFixed(2); // b=&quot;123.00&quot;
+
+var a=123;
+b=a.toPrecision(2); // b=&quot;1.2e+2&quot;
+</code></pre>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><h4 id="匹配-match"><a href="#匹配-match" class="headerlink" title="匹配 - match"></a>匹配 - match</h4><h4 id="替换-replace"><a href="#替换-replace" class="headerlink" title="替换 - replace"></a>替换 - replace</h4><h4 id="转换-toUpperCase-toLowerCase"><a href="#转换-toUpperCase-toLowerCase" class="headerlink" title="转换 - toUpperCase/ toLowerCase"></a>转换 - toUpperCase/ toLowerCase</h4><h4 id="数组-split"><a href="#数组-split" class="headerlink" title="数组 - split"></a>数组 - split</h4><h4 id="转义"><a href="#转义" class="headerlink" title="转义 - \"></a>转义 - \</h4><h3 id="日期"><a href="#日期" class="headerlink" title="日期"></a>日期</h3><pre><code class="lang-javascript">let d = new Date();
+d.getFullYear();
+d.getTime(); // 时间戳1970 年 1 月 1 日 至今
+d.toUTCString(); // 将当日的日期（根据 UTC）转换为字符串。
+d.getDay();  // 返回数字 0 为周天
+d.getMonth)(); // 从 0 开始
+</code></pre>
+<h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><pre><code class="lang-javascript">new Date();
+new Date(value);
+new Date(dateString);
+new Date(year, monthIndex [, day [, hours [, minutes [, seconds [, milliseconds]]]]]);
+</code></pre>
+<h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><pre><code class="lang-javascript">d.setFullYear(2020, 01, 01);
+d.setDate( d.getDate() + 5); // 5 天后
+</code></pre>
+<h4 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h4><pre><code class="lang-javascript">var x=new Date();
+x.setFullYear(2100,0,14);
+var today = new Date();
+if (x&gt;today)&#123;
+    alert(&quot;今天是2100年1月14日之前&quot;);
+&#125;
+else&#123;
+    alert(&quot;今天是2100年1月14日之后&quot;);
+&#125;
+</code></pre>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><blockquote>
+<p>数组中可以有不同的对象</p>
+<p>属性: length , 方法:  indexOf(value);</p>
+<p>使用原型机制添加方法:</p>
+<p>​    Array.prototype.myFun = function(){}</p>
+</blockquote>
+<h4 id="创建-1"><a href="#创建-1" class="headerlink" title="创建"></a>创建</h4><pre><code class="lang-javascript">// 1.
+let array = new Array();
+array[0] =&quot;&quot;;
+array[1] = &quot;&quot;;
+
+// 2.
+let array = new Array(&quot;&quot;, &quot;&quot;, ..);
+
+// 3. 
+let array = [ &quot;&quot;, &quot;&quot;, ..];
+</code></pre>
+<h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><ul>
+<li><p>concat(array, ..) // 合并</p>
+</li>
+<li><p>join() // 组成字符串 <code>,</code>分割 </p>
+</li>
+<li><p>pop() //删除最后一个</p>
+</li>
+<li><p>push(); //添加到最后</p>
+</li>
+<li><p>将一个数组中的元素的顺序反转排序 - reverse()</p>
+</li>
+<li><p>删除数组的第一个元素 - shift()</p>
+</li>
+<li><p>从一个数组中选择元素 - slice()</p>
+</li>
+<li>数组排序（按字母顺序升序）- sort()</li>
+<li>数字排序（按数字顺序升序）- sort()</li>
+<li>数字排序（按数字顺序降序）- sort(function(a, b){return b-a} )</li>
+<li>在数组的第2位置添加一个元素 - splice()</li>
+<li>转换数组到字符串 -toString()</li>
+<li>在数组的开头添加新元素 - unshift()</li>
+</ul>
+<h3 id="Math"><a href="#Math" class="headerlink" title="Math()"></a>Math()</h3><h4 id="round-四舍五入-floor-向下取"><a href="#round-四舍五入-floor-向下取" class="headerlink" title="round() - 四舍五入 floor 向下取"></a>round() - 四舍五入 floor 向下取</h4><h4 id="random-随机-0-1"><a href="#random-随机-0-1" class="headerlink" title="random() - 随机(0,1)"></a>random() - 随机(0,1)</h4><h4 id="max-a-b-a-b-最大"><a href="#max-a-b-a-b-最大" class="headerlink" title="max(a,b) - a,b 最大"></a>max(a,b) - a,b 最大</h4><h4 id="min-a-b-a-b最小"><a href="#min-a-b-a-b最小" class="headerlink" title="min(a,b) -a,b最小"></a>min(a,b) -a,b最小</h4><h4 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h4><ul>
+<li>sqrt() // 开方</li>
+<li>PI // 𝞹</li>
+<li>Math.floor(Math.random() * 11) // 0 -11 </li>
+</ul>
+<h3 id="RegExp对象"><a href="#RegExp对象" class="headerlink" title="RegExp对象"></a>RegExp对象</h3><blockquote>
+<p>RegExp：是正则表达式（regular expression）的简写。</p>
+</blockquote>
+<pre><code class="lang-javascript">let patt = new RegExp(&quot;\\w+&quot;, &quot;ig&quot;);
+let patt = /w+/ig
+</code></pre>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>使用</th>
+<th>返回值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>match</td>
+<td>str.match(patt)</td>
+<td><strong><em>[“RUnoob”, index: 6, input: “Visit RUnoob”, groups: undefined]</em></strong>   0: “RUnoob” groups: undefined index: 6 input: “Visit RUnoob” length: 1 <strong>proto</strong>: Array(0)</td>
+</tr>
+<tr>
+<td>test</td>
+<td>str.test(patt)</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>exec</td>
+<td>patt.exec(str)</td>
+<td><strong>[“e”, index: 2, input: “The best things in life are free”, groups: undefined]</strong> 0: “e”groups: undefinedindex: 2input: “The best things in life are free”length: 1 <strong>proto</strong>: Array(0)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="浏览器BOM-Browser-Object-Model"><a href="#浏览器BOM-Browser-Object-Model" class="headerlink" title="浏览器BOM - Browser Object Model"></a>浏览器BOM - Browser Object Model</h2><h4 id="window-对象"><a href="#window-对象" class="headerlink" title="window 对象"></a>window 对象</h4><blockquote>
+<p>DOM 自动成为 window 对象的成员</p>
+</blockquote>
+<h4 id="尺寸"><a href="#尺寸" class="headerlink" title="尺寸"></a>尺寸</h4><ul>
+<li>window.innerWidth</li>
+<li>window.innerHeigh</li>
+<li>window.open()</li>
+<li>window.moveTo()</li>
+<li>window.close()</li>
+<li>window.resizeTo()</li>
+</ul>
+<h4 id="Screen"><a href="#Screen" class="headerlink" title="Screen"></a>Screen</h4><p>/…</p>
+<h4 id="Location"><a href="#Location" class="headerlink" title="Location"></a>Location</h4><ul>
+<li>location.href</li>
+<li>location.pathname</li>
+<li>location.assign(href) // 重新加载</li>
+</ul>
+<h4 id="History"><a href="#History" class="headerlink" title="History"></a>History</h4><blockquote>
+<ol>
+<li><p><em>History {length: 7, scrollRestoration: “auto”, state: null}</em></p>
+</li>
+<li><ol>
+<li>length: 7</li>
+<li>scrollRestoration: “auto”</li>
+<li>state: null</li>
+<li><strong>proto</strong>: History</li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<ul>
+<li><p>history.back() - 上一页</p>
+</li>
+<li><p>history.forward() - 下一页</p>
+</li>
+</ul>
+<h4 id="Navigator"><a href="#Navigator" class="headerlink" title="Navigator"></a>Navigator</h4><blockquote>
+<p>访问者浏览器信息</p>
+</blockquote>
+<h4 id="弹窗"><a href="#弹窗" class="headerlink" title="弹窗"></a>弹窗</h4><blockquote>
+<p>window 下的方法</p>
+</blockquote>
+<h5 id="警告弹窗-alert"><a href="#警告弹窗-alert" class="headerlink" title="警告弹窗 - alert"></a>警告弹窗 - alert</h5><ul>
+<li>显示警告信息 \n 换行</li>
+</ul>
+<h5 id="确认弹窗-confirm"><a href="#确认弹窗-confirm" class="headerlink" title="确认弹窗 - confirm"></a>确认弹窗 - confirm</h5><ul>
+<li>返回 Boolean 类型</li>
+</ul>
+<h5 id="提示弹窗-prompt"><a href="#提示弹窗-prompt" class="headerlink" title="提示弹窗 - prompt"></a>提示弹窗 - prompt</h5><ul>
+<li>参数 : tag1 -&gt; 提示信息 , tag2 -&gt; 默认输入框内容</li>
+<li>返回值: 输入的内容</li>
+</ul>
+<h4 id="计时器"><a href="#计时器" class="headerlink" title="计时器"></a>计时器</h4><ul>
+<li>let i = setInterval(function, time) <ul>
+<li>clearInterval(i)  - 停止</li>
+</ul>
+</li>
+<li>let t = setTimeout(funcation, time)<ul>
+<li>clearTimeout(t) - 停止</li>
+</ul>
+</li>
+</ul>
+<h4 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h4><blockquote>
+<p>cookie 是一些数据,存储在客户端的文本文件.</p>
+<p>当服务器向客户端发送页面技术后不会记录客户端的信息</p>
+<p>cookie 用于存储客户端信息.</p>
+</blockquote>
+<ul>
+<li><p>创建cookie</p>
+<p>document.cookie = “username =<strong>yang</strong>;key=value”</p>
+</li>
+<li><p>读取 cookie</p>
+<p>let cook = document.cookie;</p>
+</li>
+<li><p>修改 cookie</p>
+<p>document.cookie = “username= <strong>changeName</strong>;key=value”</p>
+</li>
+<li><p>删除 cookie</p>
+<p>document.cookie = “username=; key=value”</p>
+</li>
+</ul>
+<pre><code class="lang-javascript">/// 实现的功能: 如果 有 name 的 cookie 显示, 没有就设置 cookie
+function showCookie() &#123;
+    // 1. 获取 cookie
+    let cookies = document.cookie;
+    // 2. 裁剪 cookie
+    let cookieList = cookies.split(&quot;;&quot;);
+    // 3. 查找 name cookie 的值
+    for (let i =0; i&lt; cookieList.length; i++)&#123;
+        // 删除 前后 空格
+        let name_cookie = cookieList[i].trim();
+        // 查找到name 的cookie
+        if(name_cookie.indexOf(&quot;name&quot;) === 0)&#123;
+            // 裁剪出 cookie 的值
+            let name = name_cookie.substr(&quot;name=&quot;.length, name_cookie.length);
+            // 没有设置 cookie , 跳出循环, 设置 cookie
+            if(name.length === 0)&#123;
+                break;
+            &#125;else&#123;
+                // cookie 有值, 返回结束
+                alert(&quot;欢迎回来 &quot; + name);
+                return;    
+            &#125;
+
+        &#125;
+    &#125;
+    let name = prompt(&quot;请输入用户名：&quot;);
+    document.cookie = &quot;name=&quot; + name + &quot;;&quot;
+&#125;
+
+
+//// setCookie(key, value, tiem)  ==&gt; 设置cookie 
+//// getCookie(key) ==&gt; 获取 cookie
+//// checkCookie() ==&gt; 检查cookie 业务
+</code></pre>
+<hr>
+<h2 id="类库"><a href="#类库" class="headerlink" title="类库"></a>类库</h2><h3 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h3><ul>
+<li>是目前最受欢迎的框架</li>
+<li>使用CSS选择器的方式进行操作</li>
+<li>同时提供了用户界面和插件</li>
+<li></li>
+</ul>
+<h3 id="MooTools-动画特效"><a href="#MooTools-动画特效" class="headerlink" title="MooTools - 动画特效"></a>MooTools - 动画特效</h3><h2 id="Prototype-Web任务API"><a href="#Prototype-Web任务API" class="headerlink" title="Prototype - Web任务API"></a>Prototype - Web任务API</h2>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">KawYang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://KawYang.github.io/20425d10.html">http://KawYang.github.io/20425d10.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">KawYang</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Web/">
+                                    <span class="chip bg-color">Web</span>
+                                </a>
+                            
+                                <a href="/tags/JavaScript/">
+                                    <span class="chip bg-color">JavaScript</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'usOHr6z8rRPsvixoXLTcGY31-gzGzoHsz',
+        appKey: 'xl8GJPtfGW61YDG075q2qp0D',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'monsterid',
+        pageSize: '9',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/1ba1fa2d.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="lambda入门">
+                        
+                        <span class="card-title">lambda入门</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-07
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Lambda/" class="post-category">
+                                    Lambda
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/lambda/">
+                        <span class="chip bg-color">lambda</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2f57a694.html">
+                    <div class="card-image">
+                        
+                        <img src="https://gitee.com/KawYang/image/raw/master/img/20210829234004.png" class="responsive-img" alt="正则表达式">
+                        
+                        <span class="card-title">正则表达式</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%88%AC%E8%99%AB/">
+                        <span class="chip bg-color">爬虫</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
+
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="3170279717"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.2'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <!-- <span id="year">2021</span> -->
+            <a href="/about" target="_blank">KawYang</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            <!-- 
+            
+            
+             -->
+            
+                <span id="busuanzi_container_site_pv-1">
+                    |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                        class="white-color"></span>&nbsp;次
+                </span>
+            
+            
+                <span id="busuanzi_container_site_uv-1">
+                    |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                        class="white-color"></span>&nbsp;人
+                </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "7";
+                    var startDate = "1";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/KawYang" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:KawYang@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1595550476" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1595550476" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+<script src="/js/prism/prism.js" async></script>
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var currPath = window.document.location.href;
+var pathName = window.document.location.pathname;
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" +currPath.substring(0,currPath.indexOf(pathName)) +data_url.substring(1,data_url.length)+ "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","hOffset":80,"vOffset":-20},"mobile":{"show":false},"log":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
+
+</html>
