@@ -127,14 +127,15 @@ ln -s /home/Pro-slow.log /usr/local/var/mysql/Pro-slow.log
 
 > 当前 PostgreSQL 使用的是docker 镜像,对应 版本为 `daocloud.io/library/postgres:11-alpine`
 
-PostgreSQL 设置:
+PostgreSQL 设置[<sup>3</sup>](#refer-anchor-3):
 
 | 参数名称                   | 状态                           | 说明                                                         |
 | -------------------------- | ------------------------------ | ------------------------------------------------------------ |
 | logging_collector          | on                             | Start a subprocess to capture stderr output and/or csvlogs into log files. |
 | log_min_duration_statement | 1s                             | Sets the minimum execution time above which statements will be logged. |
 | log_filename               | postgresql-%Y-%m-%d_%H%M%S.log | Sets the file name pattern for log files.                    |
-|                            |                                |                                                              |
+|log_rotation_size                      | 100MB                                    | Automatic log file rotation will occur after N kilobytes.|
+|log_directory                          | log                                      | Sets the destination directory for log files.|
 
 ### 查看设置
 
@@ -159,12 +160,14 @@ postgres=#
 
 > 通过 `docker exec -it posgres /bin/bash` 进入docker 容器,修改 `/var/lib/postgresql/data/postgresql.conf`文件,修改内容如下:
 
-![image-20211006215637406](https://gitee.com/KawYang/image/raw/master/img/image-20211006215637406.png)
+![image-20211006215637406](https://gitee.com/KawYang/image/raw/master/img/image-20211008172936048.png)
 
 
 
 ### 重新加载设置
+
 > 参考[<sup>1</sup>](#refer-anchor-1)
+
 ### 测试
 
 > 日志文件设置为 log 的存储位置为 `/var/lib/postgresql/data/log/`
@@ -208,6 +211,8 @@ bash-5.0#
 
 # 参考内容
 
-<h5 id ='refer-anchor-1'><a href ="https://www.jianshu.com/p/78fe12174d25)">postgresql开启慢查询日志</a></h5>
+<h5 id ='refer-anchor-1'><a href ="https://www.jianshu.com/p/78fe12174d25">postgresql开启慢查询日志</a></h5>
 <h5 id ='refer-anchor-2'><a href ="https://zhuanlan.zhihu.com/p/159426055">Docker容器无法启动,里面的配置文件如何修改</a></h5>   
+
+<h5 id ='refer-anchor-3'><a href ="https://www.cnblogs.com/alianbog/p/5596921.html">Postgresql日志收集</a></h5>   
 
