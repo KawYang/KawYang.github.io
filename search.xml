@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>SpringBoot静态方法注入</title>
+      <link href="//undefined.html"/>
+      <url>//undefined.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在工具类中注入静态实体类，以Service为例</p><pre><code class="lang-java">@Componentpublic class DemoUtil &#123;    private static DemoService demoService;    @Autowired    public void setDemoService(DemoService demoService) &#123;        DemoUtil.demoService = demoService;    &#125;    public static void print()&#123;        demoService.demo();    &#125;&#125;</code></pre><p><a href="https://github.com/KawYang/node-code/tree/master/elastic-demo">示例代码</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> SpringBoot </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Neo4j数据库基本操作</title>
       <link href="//43e3b8c.html"/>
       <url>//43e3b8c.html</url>
@@ -1242,31 +1261,6 @@
     
     
     <entry>
-      <title>Hibernate</title>
-      <link href="//ffb50895.html"/>
-      <url>//ffb50895.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>ORM 框架</p><p>显示数据局</p></blockquote><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><ol><li>创建 Maven 项目</li><li>导入相关依赖</li></ol><ul><li>hibernate-core</li><li>mysql-connector-java</li><li>jaxb-api</li><li>jaxb-impl</li><li>jaxb-core</li><li>junit-jupiter</li><li>c3p0-c3p0</li><li>lombok</li></ul><ol><li>创建 hibernate.cfg.xml</li></ol><pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE hibernate-configuration PUBLIC        &quot;-//Hibernate/Hibernate Configuration DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd&quot;&gt;&lt;hibernate-configuration&gt;    &lt;session-factory&gt;    &lt;/session-factory&gt;&lt;/hibernate-configuration&gt;</code></pre><ol><li>创建 JavaBean 及 classMapper.hbm.xml</li></ol><pre><code class="lang-xml">&lt;!DOCTYPE hibernate-mapping PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd&quot;&gt;&lt;hibernate-mapping package=&quot;com.kawyang.entity&quot;&gt;    &lt;class table=&quot;Student&quot; name=&quot;Student&quot;&gt;        &lt;id name=&quot;id&quot; column=&quot;id&quot; type=&quot;int&quot; &gt;            &lt;!-- 由 数据库设置 主键的生成方式 --&gt;            &lt;generator class=&quot;native&quot;&gt;&lt;/generator&gt;        &lt;/id&gt;        &lt;property name=&quot;name&quot; column=&quot;name&quot; type=&quot;java.lang.String&quot; /&gt;        &lt;property name=&quot;age&quot; column=&quot;age&quot; type=&quot;int&quot;/&gt;        &lt;property name=&quot;birthday&quot; column=&quot;birthday&quot; type=&quot;date&quot; /&gt;    &lt;/class&gt;&lt;/hibernate-mapping&gt;</code></pre><ol><li>数据查询</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hibernate </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> JavaWeb </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hibernater Error</title>
       <link href="//53f99461.html"/>
       <url>//53f99461.html</url>
@@ -1284,6 +1278,31 @@
         <tags>
             
             <tag> JavaEE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hibernate</title>
+      <link href="//ffb50895.html"/>
+      <url>//ffb50895.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>ORM 框架</p><p>显示数据局</p></blockquote><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><ol><li>创建 Maven 项目</li><li>导入相关依赖</li></ol><ul><li>hibernate-core</li><li>mysql-connector-java</li><li>jaxb-api</li><li>jaxb-impl</li><li>jaxb-core</li><li>junit-jupiter</li><li>c3p0-c3p0</li><li>lombok</li></ul><ol><li>创建 hibernate.cfg.xml</li></ol><pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE hibernate-configuration PUBLIC        &quot;-//Hibernate/Hibernate Configuration DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd&quot;&gt;&lt;hibernate-configuration&gt;    &lt;session-factory&gt;    &lt;/session-factory&gt;&lt;/hibernate-configuration&gt;</code></pre><ol><li>创建 JavaBean 及 classMapper.hbm.xml</li></ol><pre><code class="lang-xml">&lt;!DOCTYPE hibernate-mapping PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd&quot;&gt;&lt;hibernate-mapping package=&quot;com.kawyang.entity&quot;&gt;    &lt;class table=&quot;Student&quot; name=&quot;Student&quot;&gt;        &lt;id name=&quot;id&quot; column=&quot;id&quot; type=&quot;int&quot; &gt;            &lt;!-- 由 数据库设置 主键的生成方式 --&gt;            &lt;generator class=&quot;native&quot;&gt;&lt;/generator&gt;        &lt;/id&gt;        &lt;property name=&quot;name&quot; column=&quot;name&quot; type=&quot;java.lang.String&quot; /&gt;        &lt;property name=&quot;age&quot; column=&quot;age&quot; type=&quot;int&quot;/&gt;        &lt;property name=&quot;birthday&quot; column=&quot;birthday&quot; type=&quot;date&quot; /&gt;    &lt;/class&gt;&lt;/hibernate-mapping&gt;</code></pre><ol><li>数据查询</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hibernate </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaWeb </tag>
             
         </tags>
       
