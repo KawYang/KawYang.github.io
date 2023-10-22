@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>证书登录服务器</title>
+      <link href="//75ad80fa.html"/>
+      <url>//75ad80fa.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h1><p><a href="https://blog.csdn.net/bupt073114/article/details/127469740">Linux配置证书登录</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringBoot静态方法注入</title>
       <link href="//undefined.html"/>
       <url>//undefined.html</url>
@@ -32,7 +57,7 @@
       
       <categories>
           
-          <category> 分类 </category>
+          <category> 服务器 </category>
           
       </categories>
       
@@ -1261,31 +1286,6 @@
     
     
     <entry>
-      <title>Hibernater Error</title>
-      <link href="//53f99461.html"/>
-      <url>//53f99461.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="javax-xml-bind-JAXBException"><a href="#javax-xml-bind-JAXBException" class="headerlink" title="javax/xml/bind/JAXBException"></a>javax/xml/bind/JAXBException</h2><blockquote><p>缺少相关依赖</p></blockquote><h2 id="没有提供链接"><a href="#没有提供链接" class="headerlink" title="没有提供链接"></a>没有提供链接</h2><pre><code class="lang-shell">WARN: HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections8月 21, 2020 10:58:46 上午 org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator initiateServiceWARN: HHH000342: Could not obtain connection to query metadata : The application must supply JDBC connections</code></pre><blockquote><p>原因：Configuration configuration = new Configuration(); 没有调用<code>configure()</code>方法获取配置文件</p><p>修改：Configuration configuration = new Configuration().configure(); </p></blockquote><h2 id="配置文件版本"><a href="#配置文件版本" class="headerlink" title="配置文件版本"></a>配置文件版本</h2><pre><code class="lang-sh">WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.</code></pre><blockquote><p>提示 使用<code>Use namespace http://www.hibernate.org/dtd/hibernate-configuration</code> 替换<code>http://hibernate.sourceforge.net/hibernate-configuration</code></p><p>使用：  <code>http://www.hibernate.org/dtd/hibernate-mapping</code> 替换 <code>http://hibernate.sourceforge.net/hibernate-mapping.</code></p></blockquote><h2 id="java-lang-NoClassDefFoundError-com-sun-xml-bind-v2-model-annotation-AnnotationReader"><a href="#java-lang-NoClassDefFoundError-com-sun-xml-bind-v2-model-annotation-AnnotationReader" class="headerlink" title="java.lang.NoClassDefFoundError: com/sun/xml/bind/v2/model/annotation/AnnotationReader"></a>java.lang.NoClassDefFoundError: com/sun/xml/bind/v2/model/annotation/AnnotationReader</h2><h2 id="org-hibernate-internal-util-config-ConfigurationException-Unable-to-perform-unmarshalling-at-line-number-0-and-column-0-in-RESOURCE-hibernate-cfg-xml-Message-null"><a href="#org-hibernate-internal-util-config-ConfigurationException-Unable-to-perform-unmarshalling-at-line-number-0-and-column-0-in-RESOURCE-hibernate-cfg-xml-Message-null" class="headerlink" title="org.hibernate.internal.util.config.ConfigurationException: Unable to perform unmarshalling at line number 0 and column 0 in RESOURCE hibernate.cfg.xml. Message: null"></a>org.hibernate.internal.util.config.ConfigurationException: Unable to perform unmarshalling at line number 0 and column 0 in RESOURCE hibernate.cfg.xml. Message: null</h2><blockquote><p> 缺少依赖</p></blockquote><h2 id="Hibernate-依赖"><a href="#Hibernate-依赖" class="headerlink" title="Hibernate 依赖"></a>Hibernate 依赖</h2><ul><li>hibernate-core</li><li>Mysql-connection-java</li><li>jaxb-api</li><li>jaxb-impl</li><li>jab-core</li><li>activation</li></ul><pre><code class="lang-xml">&lt;dependency&gt;  &lt;groupId&gt;org.hibernate&lt;/groupId&gt;  &lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;  &lt;version&gt;5.3.7.Final&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;mysql&lt;/groupId&gt;  &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;  &lt;version&gt;8.0.20&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;javax.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-api&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;com.sun.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-impl&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;com.sun.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-core&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;javax.activation&lt;/groupId&gt;  &lt;artifactId&gt;activation&lt;/artifactId&gt;  &lt;version&gt;1.1.1&lt;/version&gt;&lt;/dependency&gt;</code></pre><h2 id="xml文件引用"><a href="#xml文件引用" class="headerlink" title="xml文件引用"></a>xml文件引用</h2><h3 id="hinernate-cfg-xml"><a href="#hinernate-cfg-xml" class="headerlink" title="hinernate.cfg.xml"></a>hinernate.cfg.xml</h3><pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE hibernate-configuration PUBLIC        &quot;-//Hibernate/Hibernate Configuration DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd&quot;&gt;&lt;hibernate-configuration&gt;    &lt;session-factory&gt;        &lt;property&gt;&lt;/property&gt;    &lt;/session-factory&gt;&lt;/hibernate-configuration&gt;</code></pre><h3 id="mapper-hbm-xml"><a href="#mapper-hbm-xml" class="headerlink" title="mapper.hbm.xml"></a>mapper.hbm.xml</h3><pre><code class="lang-xml">&lt;!DOCTYPE hibernate-mapping PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd&quot;&gt;&lt;hibernate-mapping package=&quot;kawyang.entity&quot;&gt;    &lt;class&gt;    &lt;/class&gt;&lt;/hibernate-mapping&gt;</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> Error </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> JavaEE </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hibernate</title>
       <link href="//ffb50895.html"/>
       <url>//ffb50895.html</url>
@@ -1303,6 +1303,31 @@
         <tags>
             
             <tag> JavaWeb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hibernater Error</title>
+      <link href="//53f99461.html"/>
+      <url>//53f99461.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="javax-xml-bind-JAXBException"><a href="#javax-xml-bind-JAXBException" class="headerlink" title="javax/xml/bind/JAXBException"></a>javax/xml/bind/JAXBException</h2><blockquote><p>缺少相关依赖</p></blockquote><h2 id="没有提供链接"><a href="#没有提供链接" class="headerlink" title="没有提供链接"></a>没有提供链接</h2><pre><code class="lang-shell">WARN: HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections8月 21, 2020 10:58:46 上午 org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator initiateServiceWARN: HHH000342: Could not obtain connection to query metadata : The application must supply JDBC connections</code></pre><blockquote><p>原因：Configuration configuration = new Configuration(); 没有调用<code>configure()</code>方法获取配置文件</p><p>修改：Configuration configuration = new Configuration().configure(); </p></blockquote><h2 id="配置文件版本"><a href="#配置文件版本" class="headerlink" title="配置文件版本"></a>配置文件版本</h2><pre><code class="lang-sh">WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.</code></pre><blockquote><p>提示 使用<code>Use namespace http://www.hibernate.org/dtd/hibernate-configuration</code> 替换<code>http://hibernate.sourceforge.net/hibernate-configuration</code></p><p>使用：  <code>http://www.hibernate.org/dtd/hibernate-mapping</code> 替换 <code>http://hibernate.sourceforge.net/hibernate-mapping.</code></p></blockquote><h2 id="java-lang-NoClassDefFoundError-com-sun-xml-bind-v2-model-annotation-AnnotationReader"><a href="#java-lang-NoClassDefFoundError-com-sun-xml-bind-v2-model-annotation-AnnotationReader" class="headerlink" title="java.lang.NoClassDefFoundError: com/sun/xml/bind/v2/model/annotation/AnnotationReader"></a>java.lang.NoClassDefFoundError: com/sun/xml/bind/v2/model/annotation/AnnotationReader</h2><h2 id="org-hibernate-internal-util-config-ConfigurationException-Unable-to-perform-unmarshalling-at-line-number-0-and-column-0-in-RESOURCE-hibernate-cfg-xml-Message-null"><a href="#org-hibernate-internal-util-config-ConfigurationException-Unable-to-perform-unmarshalling-at-line-number-0-and-column-0-in-RESOURCE-hibernate-cfg-xml-Message-null" class="headerlink" title="org.hibernate.internal.util.config.ConfigurationException: Unable to perform unmarshalling at line number 0 and column 0 in RESOURCE hibernate.cfg.xml. Message: null"></a>org.hibernate.internal.util.config.ConfigurationException: Unable to perform unmarshalling at line number 0 and column 0 in RESOURCE hibernate.cfg.xml. Message: null</h2><blockquote><p> 缺少依赖</p></blockquote><h2 id="Hibernate-依赖"><a href="#Hibernate-依赖" class="headerlink" title="Hibernate 依赖"></a>Hibernate 依赖</h2><ul><li>hibernate-core</li><li>Mysql-connection-java</li><li>jaxb-api</li><li>jaxb-impl</li><li>jab-core</li><li>activation</li></ul><pre><code class="lang-xml">&lt;dependency&gt;  &lt;groupId&gt;org.hibernate&lt;/groupId&gt;  &lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;  &lt;version&gt;5.3.7.Final&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;mysql&lt;/groupId&gt;  &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;  &lt;version&gt;8.0.20&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;javax.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-api&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;com.sun.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-impl&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;com.sun.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-core&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;javax.activation&lt;/groupId&gt;  &lt;artifactId&gt;activation&lt;/artifactId&gt;  &lt;version&gt;1.1.1&lt;/version&gt;&lt;/dependency&gt;</code></pre><h2 id="xml文件引用"><a href="#xml文件引用" class="headerlink" title="xml文件引用"></a>xml文件引用</h2><h3 id="hinernate-cfg-xml"><a href="#hinernate-cfg-xml" class="headerlink" title="hinernate.cfg.xml"></a>hinernate.cfg.xml</h3><pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE hibernate-configuration PUBLIC        &quot;-//Hibernate/Hibernate Configuration DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd&quot;&gt;&lt;hibernate-configuration&gt;    &lt;session-factory&gt;        &lt;property&gt;&lt;/property&gt;    &lt;/session-factory&gt;&lt;/hibernate-configuration&gt;</code></pre><h3 id="mapper-hbm-xml"><a href="#mapper-hbm-xml" class="headerlink" title="mapper.hbm.xml"></a>mapper.hbm.xml</h3><pre><code class="lang-xml">&lt;!DOCTYPE hibernate-mapping PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd&quot;&gt;&lt;hibernate-mapping package=&quot;kawyang.entity&quot;&gt;    &lt;class&gt;    &lt;/class&gt;&lt;/hibernate-mapping&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Error </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaEE </tag>
             
         </tags>
       
