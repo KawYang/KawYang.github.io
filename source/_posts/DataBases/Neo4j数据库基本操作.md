@@ -5,7 +5,7 @@ top: false
 cover: false
 toc: true
 mathjax: false
-categories: 分类
+categories: 服务器
 tags:
   - 标签
 abbrlink: 43e3b8c
