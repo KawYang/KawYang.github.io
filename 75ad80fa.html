@@ -432,8 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%A0%87%E7%AD%BE/">
-                                <span class="chip bg-color">标签</span>
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
                     </div>
@@ -466,7 +466,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    11
+                    201
                 </div>
                 
 
@@ -493,7 +493,35 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/bupt073114/article/details/127469740">Linux配置证书登录</a></p>
+                <h2 id="本地生成证书"><a href="#本地生成证书" class="headerlink" title="本地生成证书"></a>本地生成证书</h2><pre><code class="lang-shell">ssh-keygen -C KawYang@163.com
+# ssh-keygen --help 查看帮助信息
+# [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa] 指定证书类型
+# [-C comment] 用于备注信息
+</code></pre>
+<ul>
+<li>id_rsa : 私钥文件</li>
+<li>id_rsa.pub 公钥文件，需要传到服务器上<img src="https://gitee.com/KawYang/image/raw/master/img/202311261013726.png" alt=""></li>
+</ul>
+<h2 id="配置公钥"><a href="#配置公钥" class="headerlink" title="配置公钥"></a>配置公钥</h2><ul>
+<li><p>开启服务器配置</p>
+<pre><code class="lang-shell"># 文本编辑器打开 /etc/ssh/sshd_config 文件
+vi /etc/ssh/sshd_config
+
+# 开启证书登录（默认为yes，确保其不是被取消注释的no）
+PubkeyAuthentication
+# 授权秘钥文件位置（如果被取消注释，确保其指向你的authorized_keys）
+AuthorizedKeysFile
+# 密码验证登录（默认为yes，证书登录部署完成可以手动关闭以提高安全性）
+PasswordAuthentication no
+</code></pre>
+</li>
+<li><p>将公钥保存到服务器上</p>
+<pre><code class="lang-shell">root@3721400:~/.ssh# cat authorized_keys
+ssh-rsa AAAAB3NzaC KawYang@163.com
+</code></pre>
+</li>
+</ul>
+<h1 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/bupt073114/article/details/127469740">Linux配置证书登录</a></p>
 
                 
             </div>
@@ -558,8 +586,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%A0%87%E7%AD%BE/">
-                                    <span class="chip bg-color">标签</span>
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
                                 </a>
                             
                         </div>
@@ -906,8 +934,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%A0%87%E7%AD%BE/">
-                        <span class="chip bg-color">标签</span>
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
                 </div>
