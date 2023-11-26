@@ -175,31 +175,6 @@
     
     
     <entry>
-      <title>算法导论(二)</title>
-      <link href="//2a0926d8.html"/>
-      <url>//2a0926d8.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h1><h2 id="一、-渐进符号"><a href="#一、-渐进符号" class="headerlink" title="一、 渐进符号"></a>一、 渐进符号</h2><h4 id="O符号-大O符号"><a href="#O符号-大O符号" class="headerlink" title="O符号 (大O符号)"></a>O符号 (大O符号)</h4><blockquote><p><strong>定义</strong>: <script type="math/tex">f(n) = O(g(n)) f(n) 属于 g(n)的函数集, \exists</script>常数c, n<sub>0</sub>  c&gt; 0 , n<sub>0</sub> &gt; 0</p><p><strong>使得</strong> $f(n) \leq O(g(n))$ 对于充分大的 n 成立,  n &gt;= n<sub>0</sub></p></blockquote><h4 id="Ex-2n-2-O-n-3-等号是不对称的"><a href="#Ex-2n-2-O-n-3-等号是不对称的" class="headerlink" title="Ex: $ 2n^2 = O(n^3) $ 等号是不对称的"></a>Ex: $ 2n^2 = O(n^3) $ <strong>等号是不对称的</strong></h4><script type="math/tex; mode=display">O(g(n)) =  \{ f(n) |\  \exists ,c > 0, n_0 > 0, 使得\ f(n) \ 以\ 0 和\ c *g(n)为界\   0 \leq f(f(n)) \leq c *g(n) \  for \ all \  n \geq n_0 \}</script><p><code>不是等于 =&gt; 是一种 属于的关系</code></p><h4 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h4><p>$ f(n) = n^3 + O(n^2)$ 表示</p><p>$ f(n) = n^3 + O(n^2) \  \exists h(n) \in O(n^2) =&gt; f(n) = n^3 + h(n)  , 存在 n &gt; n_0$</p><p>有低阶项以某个常数 * $n^2$ 为 界</p><h4 id="Ex-n-2-O-n-O-n-2-此处不对称-表示-is"><a href="#Ex-n-2-O-n-O-n-2-此处不对称-表示-is" class="headerlink" title="Ex $ n^ 2  +O(n) = O(n^2)$ 此处不对称, 表示 is "></a>Ex $ n^ 2  +O(n) = O(n^2)$ <strong>此处不对称, 表示 is </strong></h4><blockquote><p>任何$n^2  +O(n)$ 都是 $O(n^2)$ 反之不然</p></blockquote><p>$ means \ for  \ any \ f(n) \in O(n) \ there \ is \ an \ h(n) \in O(n^2) \ such \ that \ n^2 + f(n) = h(n) $</p><h4 id="Ω符号-大Ω符号"><a href="#Ω符号-大Ω符号" class="headerlink" title="Ω符号 (大Ω符号)"></a>Ω符号 (大Ω符号)</h4><h4 id="theta-符号-大-theta符号"><a href="#theta-符号-大-theta符号" class="headerlink" title="\theta 符号 (大\theta符号)"></a><script type="math/tex">\theta</script> 符号 (大<script type="math/tex">\theta</script>符号)</h4><h2 id="二、-严格符号"><a href="#二、-严格符号" class="headerlink" title="二、 严格符号"></a>二、 严格符号</h2><h4 id="o-符号-小o符号"><a href="#o-符号-小o符号" class="headerlink" title="o 符号 (小o符号)"></a>o 符号 (小o符号)</h4><h4 id="ω-符号-小ω符号"><a href="#ω-符号-小ω符号" class="headerlink" title="ω 符号 (小ω符号)"></a>ω 符号 (小ω符号)</h4><h2 id="解递归式"><a href="#解递归式" class="headerlink" title="解递归式"></a>解递归式</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> 算法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 算法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>责任链模式</title>
       <link href="//6208627e.html"/>
       <url>//6208627e.html</url>
@@ -217,6 +192,31 @@
         <tags>
             
             <tag> 设计模式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法导论(二)</title>
+      <link href="//2a0926d8.html"/>
+      <url>//2a0926d8.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h1><h2 id="一、-渐进符号"><a href="#一、-渐进符号" class="headerlink" title="一、 渐进符号"></a>一、 渐进符号</h2><h4 id="O符号-大O符号"><a href="#O符号-大O符号" class="headerlink" title="O符号 (大O符号)"></a>O符号 (大O符号)</h4><blockquote><p><strong>定义</strong>: <script type="math/tex">f(n) = O(g(n)) f(n) 属于 g(n)的函数集, \exists</script>常数c, n<sub>0</sub>  c&gt; 0 , n<sub>0</sub> &gt; 0</p><p><strong>使得</strong> $f(n) \leq O(g(n))$ 对于充分大的 n 成立,  n &gt;= n<sub>0</sub></p></blockquote><h4 id="Ex-2n-2-O-n-3-等号是不对称的"><a href="#Ex-2n-2-O-n-3-等号是不对称的" class="headerlink" title="Ex: $ 2n^2 = O(n^3) $ 等号是不对称的"></a>Ex: $ 2n^2 = O(n^3) $ <strong>等号是不对称的</strong></h4><script type="math/tex; mode=display">O(g(n)) =  \{ f(n) |\  \exists ,c > 0, n_0 > 0, 使得\ f(n) \ 以\ 0 和\ c *g(n)为界\   0 \leq f(f(n)) \leq c *g(n) \  for \ all \  n \geq n_0 \}</script><p><code>不是等于 =&gt; 是一种 属于的关系</code></p><h4 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h4><p>$ f(n) = n^3 + O(n^2)$ 表示</p><p>$ f(n) = n^3 + O(n^2) \  \exists h(n) \in O(n^2) =&gt; f(n) = n^3 + h(n)  , 存在 n &gt; n_0$</p><p>有低阶项以某个常数 * $n^2$ 为 界</p><h4 id="Ex-n-2-O-n-O-n-2-此处不对称-表示-is"><a href="#Ex-n-2-O-n-O-n-2-此处不对称-表示-is" class="headerlink" title="Ex $ n^ 2  +O(n) = O(n^2)$ 此处不对称, 表示 is "></a>Ex $ n^ 2  +O(n) = O(n^2)$ <strong>此处不对称, 表示 is </strong></h4><blockquote><p>任何$n^2  +O(n)$ 都是 $O(n^2)$ 反之不然</p></blockquote><p>$ means \ for  \ any \ f(n) \in O(n) \ there \ is \ an \ h(n) \in O(n^2) \ such \ that \ n^2 + f(n) = h(n) $</p><h4 id="Ω符号-大Ω符号"><a href="#Ω符号-大Ω符号" class="headerlink" title="Ω符号 (大Ω符号)"></a>Ω符号 (大Ω符号)</h4><h4 id="theta-符号-大-theta符号"><a href="#theta-符号-大-theta符号" class="headerlink" title="\theta 符号 (大\theta符号)"></a><script type="math/tex">\theta</script> 符号 (大<script type="math/tex">\theta</script>符号)</h4><h2 id="二、-严格符号"><a href="#二、-严格符号" class="headerlink" title="二、 严格符号"></a>二、 严格符号</h2><h4 id="o-符号-小o符号"><a href="#o-符号-小o符号" class="headerlink" title="o 符号 (小o符号)"></a>o 符号 (小o符号)</h4><h4 id="ω-符号-小ω符号"><a href="#ω-符号-小ω符号" class="headerlink" title="ω 符号 (小ω符号)"></a>ω 符号 (小ω符号)</h4><h2 id="解递归式"><a href="#解递归式" class="headerlink" title="解递归式"></a>解递归式</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -1005,31 +1005,6 @@
     
     
     <entry>
-      <title>算法分析 (一)-  Analysis of Algorithm</title>
-      <link href="//8ed8be26.html"/>
-      <url>//8ed8be26.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="算法分析-一-Analysis-of-Algorithm"><a href="#算法分析-一-Analysis-of-Algorithm" class="headerlink" title="算法分析 (一)-  Analysis of Algorithm"></a>算法分析 (一)-  Analysis of Algorithm</h2><hr><blockquote><p>算法分析是关于计算机程序性能和<strong>资源利用</strong>的研究,这是关于性能的课程</p></blockquote><h3 id="什么是比性能更重要呢"><a href="#什么是比性能更重要呢" class="headerlink" title="什么是比性能更重要呢?"></a>什么是比性能更重要呢?</h3><ul><li>可维护性</li><li>软件的健壮性</li><li>特性</li><li>功能化 - 可复用行</li><li>安全性</li><li>可拓展性</li><li>用户友好 </li><li>…</li></ul><h3 id="为什么还要关注性能"><a href="#为什么还要关注性能" class="headerlink" title="为什么还要关注性能?"></a>为什么还要关注性能?</h3><ul><li>一 、 性能的好坏 往往直接决定这可行性 【<strong>算法能够将不可行变成可行】</strong></li><li>二 、 是一种描述性语言，是一种让程序最为简洁的思考方式，性能是确保良好的用户体验的前提，也是安全的保障。</li><li>三、带来喜悦，追求速度。</li></ul><h2 id="排序问题-Problem-Sorting"><a href="#排序问题-Problem-Sorting" class="headerlink" title="排序问题 - Problem Sorting"></a>排序问题 - Problem Sorting</h2><blockquote><p>输入序列，输出有序的数列。</p></blockquote><h3 id="Sorting-1-Insertion-Sort"><a href="#Sorting-1-Insertion-Sort" class="headerlink" title="Sorting 1 - Insertion Sort"></a>Sorting 1 - Insertion Sort</h3><h4 id="伪代码"><a href="#伪代码" class="headerlink" title="伪代码"></a>伪代码</h4><pre><code class="lang-java">InsertionSort(An) // Sorts A[1 ... n]for i &lt;- 2 to n    key &lt;- A[i]    j &lt;- i -1    while j &gt; 0 &amp;&amp; A[j] &gt; key        A[j] &lt;- A[j-1]        j &lt;- j-1    A[j+1] &lt;- key</code></pre><p>示例</p><pre><code class="lang-java">void InsertionSort(int [] n)&#123;    for(i = 2; i &lt; n.length() ; i++)&#123;        int key = n[i];        int j = i - 1;        // 大元素后移        while(j &gt; 0 &amp;&amp; n[j] &gt; key)&#123;            n[j+1] = n[j];            j --;        &#125;        // 插入位置 【j+1 -&gt; 最后一次 循环 j 与插入位置 差 1】        n[j+1] = key;    &#125;&#125;</code></pre><p><img src="https://img-blog.csdnimg.cn/img_convert/e4c8957e85cd0397cf9b0d5494153d2b.png" alt="示意图"></p><h3 id="运行时间"><a href="#运行时间" class="headerlink" title="运行时间"></a>运行时间</h3><ul><li>取决于输入的内容</li><li>取决于输入的大小<ul><li>依据输入的规模进行参数化</li></ul></li><li>运行时间的上界 【该算法 至少运行 3秒？？？显然不合理】<strong>代表了对用户的承诺</strong></li></ul><h4 id="对时间的分析方法"><a href="#对时间的分析方法" class="headerlink" title="对时间的分析方法"></a>对时间的分析方法</h4><ol><li>最长运行时间<ul><li>T(n) = max Time on any input of size </li><li><strong>T(n)在某种意义上表示的是一种相关性，而不能算函数</strong></li><li>如果使用最大值就可以是函数关系， 因为运行的最大时间只有一个。</li></ul></li><li><p>平均运行时间</p><ul><li>T(n) 就变成了所有输入的期望时间</li><li>每种输入的运行时间 * 输入出现的概率值 【加权平均数】</li><li>不可能知道每种输入的概率 - 所以需要作出假设，通常使用 <strong>均匀分布</strong>，即 <strong>每种输入出现的概率相同</strong></li></ul></li><li><p>最好输入情况 (假象) - (下界 )</p></li></ol><h3 id="插入排序的最坏时间"><a href="#插入排序的最坏时间" class="headerlink" title="插入排序的最坏时间"></a>插入排序的最坏时间</h3><p>依赖于计算机</p><ul><li>同一个计算机运行不同的算法 - 对比的是相对时间</li><li>同一个算法运行在不同的计算机上，不一定都很快 - 对比的是绝对时间</li></ul><h4 id="BIG-IDEA"><a href="#BIG-IDEA" class="headerlink" title="BIG IDEA"></a>BIG IDEA</h4><p>针对以上两种情况 产生了 大局观(<strong>BIG IDEA</strong>)</p><p>即 渐进分析(asymptotic anaiysis)</p><h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><ol><li>忽略掉依赖于计算机的常量</li><li>不是去检查运行的实际时间，而是关注运行时间的增长 T(n) n-&gt;∞</li></ol><h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><ol><li><p>θ 符号</p><blockquote><p>丢弃低阶项，并忽略常数因子</p></blockquote></li></ol><p>Ex: <script type="math/tex">3n^3 + 90n^2 - n = \theta(n^3)</script></p><p>当 n -&gt;∞ ， θ(n<sup>3</sup>) 迟早高于 θ(n<sup>2</sup>) 【与常数项是无关的 只不过交点x坐标的大小】 同时满足以上两种对比(未知)</p><p><img src="https://img-blog.csdnimg.cn/img_convert/9dd2e7efbb1fa7c78eda292ddc74b416.png" alt=""></p><blockquote><p>一开始，尽管 n<sup>2</sup> 在渐进的观点来看是慢的，但是仍可以在合理(数据量少)的输入下是快的。<br><code>因此需要在数学理解和工程直觉 上做好权衡才能写出更好的程序</code></p></blockquote><h3 id="最坏情况分析"><a href="#最坏情况分析" class="headerlink" title="最坏情况分析"></a>最坏情况分析</h3><ul><li>输入顺序为 逆序</li></ul><blockquote><p>内存引用计数，某个变量访问的次数</p></blockquote><ol><li><script type="math/tex; mode=display">T(n) =\sum_{i=2}^n\theta(i) = \theta(n^2)</script></li></ol><blockquote><script type="math/tex; mode=display">θ(i) : 执行 i 次的时间</script><script type="math/tex; mode=display">θ(n^2): 类似 1 + 2 ... + n = n(n+1)/2 = \theta(n^2)</script></blockquote><ul><li>θ符号是一种弱符号运算。 极限的莱布尼茨 公式 是强符号运算。</li></ul><p><strong>所以 ： 插入排序的最坏时间 为 T(n<sup>2</sup>)</strong></p><h1 id="参考信息"><a href="#参考信息" class="headerlink" title="参考信息"></a>参考信息</h1><p><a href="htps://www.bilibili.com/video/BV1Kx411f7bL?t=3771">学习视频</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 算法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 算法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Spring-IoC(控制反转)&amp;DI(依赖注入)</title>
       <link href="//92a38b2.html"/>
       <url>//92a38b2.html</url>
@@ -1047,6 +1022,31 @@
         <tags>
             
             <tag> 设计模式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法分析 (一)-  Analysis of Algorithm</title>
+      <link href="//8ed8be26.html"/>
+      <url>//8ed8be26.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="算法分析-一-Analysis-of-Algorithm"><a href="#算法分析-一-Analysis-of-Algorithm" class="headerlink" title="算法分析 (一)-  Analysis of Algorithm"></a>算法分析 (一)-  Analysis of Algorithm</h2><hr><blockquote><p>算法分析是关于计算机程序性能和<strong>资源利用</strong>的研究,这是关于性能的课程</p></blockquote><h3 id="什么是比性能更重要呢"><a href="#什么是比性能更重要呢" class="headerlink" title="什么是比性能更重要呢?"></a>什么是比性能更重要呢?</h3><ul><li>可维护性</li><li>软件的健壮性</li><li>特性</li><li>功能化 - 可复用行</li><li>安全性</li><li>可拓展性</li><li>用户友好 </li><li>…</li></ul><h3 id="为什么还要关注性能"><a href="#为什么还要关注性能" class="headerlink" title="为什么还要关注性能?"></a>为什么还要关注性能?</h3><ul><li>一 、 性能的好坏 往往直接决定这可行性 【<strong>算法能够将不可行变成可行】</strong></li><li>二 、 是一种描述性语言，是一种让程序最为简洁的思考方式，性能是确保良好的用户体验的前提，也是安全的保障。</li><li>三、带来喜悦，追求速度。</li></ul><h2 id="排序问题-Problem-Sorting"><a href="#排序问题-Problem-Sorting" class="headerlink" title="排序问题 - Problem Sorting"></a>排序问题 - Problem Sorting</h2><blockquote><p>输入序列，输出有序的数列。</p></blockquote><h3 id="Sorting-1-Insertion-Sort"><a href="#Sorting-1-Insertion-Sort" class="headerlink" title="Sorting 1 - Insertion Sort"></a>Sorting 1 - Insertion Sort</h3><h4 id="伪代码"><a href="#伪代码" class="headerlink" title="伪代码"></a>伪代码</h4><pre><code class="lang-java">InsertionSort(An) // Sorts A[1 ... n]for i &lt;- 2 to n    key &lt;- A[i]    j &lt;- i -1    while j &gt; 0 &amp;&amp; A[j] &gt; key        A[j] &lt;- A[j-1]        j &lt;- j-1    A[j+1] &lt;- key</code></pre><p>示例</p><pre><code class="lang-java">void InsertionSort(int [] n)&#123;    for(i = 2; i &lt; n.length() ; i++)&#123;        int key = n[i];        int j = i - 1;        // 大元素后移        while(j &gt; 0 &amp;&amp; n[j] &gt; key)&#123;            n[j+1] = n[j];            j --;        &#125;        // 插入位置 【j+1 -&gt; 最后一次 循环 j 与插入位置 差 1】        n[j+1] = key;    &#125;&#125;</code></pre><p><img src="https://img-blog.csdnimg.cn/img_convert/e4c8957e85cd0397cf9b0d5494153d2b.png" alt="示意图"></p><h3 id="运行时间"><a href="#运行时间" class="headerlink" title="运行时间"></a>运行时间</h3><ul><li>取决于输入的内容</li><li>取决于输入的大小<ul><li>依据输入的规模进行参数化</li></ul></li><li>运行时间的上界 【该算法 至少运行 3秒？？？显然不合理】<strong>代表了对用户的承诺</strong></li></ul><h4 id="对时间的分析方法"><a href="#对时间的分析方法" class="headerlink" title="对时间的分析方法"></a>对时间的分析方法</h4><ol><li>最长运行时间<ul><li>T(n) = max Time on any input of size </li><li><strong>T(n)在某种意义上表示的是一种相关性，而不能算函数</strong></li><li>如果使用最大值就可以是函数关系， 因为运行的最大时间只有一个。</li></ul></li><li><p>平均运行时间</p><ul><li>T(n) 就变成了所有输入的期望时间</li><li>每种输入的运行时间 * 输入出现的概率值 【加权平均数】</li><li>不可能知道每种输入的概率 - 所以需要作出假设，通常使用 <strong>均匀分布</strong>，即 <strong>每种输入出现的概率相同</strong></li></ul></li><li><p>最好输入情况 (假象) - (下界 )</p></li></ol><h3 id="插入排序的最坏时间"><a href="#插入排序的最坏时间" class="headerlink" title="插入排序的最坏时间"></a>插入排序的最坏时间</h3><p>依赖于计算机</p><ul><li>同一个计算机运行不同的算法 - 对比的是相对时间</li><li>同一个算法运行在不同的计算机上，不一定都很快 - 对比的是绝对时间</li></ul><h4 id="BIG-IDEA"><a href="#BIG-IDEA" class="headerlink" title="BIG IDEA"></a>BIG IDEA</h4><p>针对以上两种情况 产生了 大局观(<strong>BIG IDEA</strong>)</p><p>即 渐进分析(asymptotic anaiysis)</p><h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><ol><li>忽略掉依赖于计算机的常量</li><li>不是去检查运行的实际时间，而是关注运行时间的增长 T(n) n-&gt;∞</li></ol><h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><ol><li><p>θ 符号</p><blockquote><p>丢弃低阶项，并忽略常数因子</p></blockquote></li></ol><p>Ex: <script type="math/tex">3n^3 + 90n^2 - n = \theta(n^3)</script></p><p>当 n -&gt;∞ ， θ(n<sup>3</sup>) 迟早高于 θ(n<sup>2</sup>) 【与常数项是无关的 只不过交点x坐标的大小】 同时满足以上两种对比(未知)</p><p><img src="https://img-blog.csdnimg.cn/img_convert/9dd2e7efbb1fa7c78eda292ddc74b416.png" alt=""></p><blockquote><p>一开始，尽管 n<sup>2</sup> 在渐进的观点来看是慢的，但是仍可以在合理(数据量少)的输入下是快的。<br><code>因此需要在数学理解和工程直觉 上做好权衡才能写出更好的程序</code></p></blockquote><h3 id="最坏情况分析"><a href="#最坏情况分析" class="headerlink" title="最坏情况分析"></a>最坏情况分析</h3><ul><li>输入顺序为 逆序</li></ul><blockquote><p>内存引用计数，某个变量访问的次数</p></blockquote><ol><li><script type="math/tex; mode=display">T(n) =\sum_{i=2}^n\theta(i) = \theta(n^2)</script></li></ol><blockquote><script type="math/tex; mode=display">θ(i) : 执行 i 次的时间</script><script type="math/tex; mode=display">θ(n^2): 类似 1 + 2 ... + n = n(n+1)/2 = \theta(n^2)</script></blockquote><ul><li>θ符号是一种弱符号运算。 极限的莱布尼茨 公式 是强符号运算。</li></ul><p><strong>所以 ： 插入排序的最坏时间 为 T(n<sup>2</sup>)</strong></p><h1 id="参考信息"><a href="#参考信息" class="headerlink" title="参考信息"></a>参考信息</h1><p><a href="htps://www.bilibili.com/video/BV1Kx411f7bL?t=3771">学习视频</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -1286,31 +1286,6 @@
     
     
     <entry>
-      <title>Hibernater Error</title>
-      <link href="//53f99461.html"/>
-      <url>//53f99461.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="javax-xml-bind-JAXBException"><a href="#javax-xml-bind-JAXBException" class="headerlink" title="javax/xml/bind/JAXBException"></a>javax/xml/bind/JAXBException</h2><blockquote><p>缺少相关依赖</p></blockquote><h2 id="没有提供链接"><a href="#没有提供链接" class="headerlink" title="没有提供链接"></a>没有提供链接</h2><pre><code class="lang-shell">WARN: HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections8月 21, 2020 10:58:46 上午 org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator initiateServiceWARN: HHH000342: Could not obtain connection to query metadata : The application must supply JDBC connections</code></pre><blockquote><p>原因：Configuration configuration = new Configuration(); 没有调用<code>configure()</code>方法获取配置文件</p><p>修改：Configuration configuration = new Configuration().configure(); </p></blockquote><h2 id="配置文件版本"><a href="#配置文件版本" class="headerlink" title="配置文件版本"></a>配置文件版本</h2><pre><code class="lang-sh">WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.</code></pre><blockquote><p>提示 使用<code>Use namespace http://www.hibernate.org/dtd/hibernate-configuration</code> 替换<code>http://hibernate.sourceforge.net/hibernate-configuration</code></p><p>使用：  <code>http://www.hibernate.org/dtd/hibernate-mapping</code> 替换 <code>http://hibernate.sourceforge.net/hibernate-mapping.</code></p></blockquote><h2 id="java-lang-NoClassDefFoundError-com-sun-xml-bind-v2-model-annotation-AnnotationReader"><a href="#java-lang-NoClassDefFoundError-com-sun-xml-bind-v2-model-annotation-AnnotationReader" class="headerlink" title="java.lang.NoClassDefFoundError: com/sun/xml/bind/v2/model/annotation/AnnotationReader"></a>java.lang.NoClassDefFoundError: com/sun/xml/bind/v2/model/annotation/AnnotationReader</h2><h2 id="org-hibernate-internal-util-config-ConfigurationException-Unable-to-perform-unmarshalling-at-line-number-0-and-column-0-in-RESOURCE-hibernate-cfg-xml-Message-null"><a href="#org-hibernate-internal-util-config-ConfigurationException-Unable-to-perform-unmarshalling-at-line-number-0-and-column-0-in-RESOURCE-hibernate-cfg-xml-Message-null" class="headerlink" title="org.hibernate.internal.util.config.ConfigurationException: Unable to perform unmarshalling at line number 0 and column 0 in RESOURCE hibernate.cfg.xml. Message: null"></a>org.hibernate.internal.util.config.ConfigurationException: Unable to perform unmarshalling at line number 0 and column 0 in RESOURCE hibernate.cfg.xml. Message: null</h2><blockquote><p> 缺少依赖</p></blockquote><h2 id="Hibernate-依赖"><a href="#Hibernate-依赖" class="headerlink" title="Hibernate 依赖"></a>Hibernate 依赖</h2><ul><li>hibernate-core</li><li>Mysql-connection-java</li><li>jaxb-api</li><li>jaxb-impl</li><li>jab-core</li><li>activation</li></ul><pre><code class="lang-xml">&lt;dependency&gt;  &lt;groupId&gt;org.hibernate&lt;/groupId&gt;  &lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;  &lt;version&gt;5.3.7.Final&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;mysql&lt;/groupId&gt;  &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;  &lt;version&gt;8.0.20&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;javax.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-api&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;com.sun.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-impl&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;com.sun.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-core&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;javax.activation&lt;/groupId&gt;  &lt;artifactId&gt;activation&lt;/artifactId&gt;  &lt;version&gt;1.1.1&lt;/version&gt;&lt;/dependency&gt;</code></pre><h2 id="xml文件引用"><a href="#xml文件引用" class="headerlink" title="xml文件引用"></a>xml文件引用</h2><h3 id="hinernate-cfg-xml"><a href="#hinernate-cfg-xml" class="headerlink" title="hinernate.cfg.xml"></a>hinernate.cfg.xml</h3><pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE hibernate-configuration PUBLIC        &quot;-//Hibernate/Hibernate Configuration DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd&quot;&gt;&lt;hibernate-configuration&gt;    &lt;session-factory&gt;        &lt;property&gt;&lt;/property&gt;    &lt;/session-factory&gt;&lt;/hibernate-configuration&gt;</code></pre><h3 id="mapper-hbm-xml"><a href="#mapper-hbm-xml" class="headerlink" title="mapper.hbm.xml"></a>mapper.hbm.xml</h3><pre><code class="lang-xml">&lt;!DOCTYPE hibernate-mapping PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd&quot;&gt;&lt;hibernate-mapping package=&quot;kawyang.entity&quot;&gt;    &lt;class&gt;    &lt;/class&gt;&lt;/hibernate-mapping&gt;</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> Error </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> JavaEE </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hibernate</title>
       <link href="//ffb50895.html"/>
       <url>//ffb50895.html</url>
@@ -1328,6 +1303,31 @@
         <tags>
             
             <tag> JavaWeb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hibernater Error</title>
+      <link href="//53f99461.html"/>
+      <url>//53f99461.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="javax-xml-bind-JAXBException"><a href="#javax-xml-bind-JAXBException" class="headerlink" title="javax/xml/bind/JAXBException"></a>javax/xml/bind/JAXBException</h2><blockquote><p>缺少相关依赖</p></blockquote><h2 id="没有提供链接"><a href="#没有提供链接" class="headerlink" title="没有提供链接"></a>没有提供链接</h2><pre><code class="lang-shell">WARN: HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections8月 21, 2020 10:58:46 上午 org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator initiateServiceWARN: HHH000342: Could not obtain connection to query metadata : The application must supply JDBC connections</code></pre><blockquote><p>原因：Configuration configuration = new Configuration(); 没有调用<code>configure()</code>方法获取配置文件</p><p>修改：Configuration configuration = new Configuration().configure(); </p></blockquote><h2 id="配置文件版本"><a href="#配置文件版本" class="headerlink" title="配置文件版本"></a>配置文件版本</h2><pre><code class="lang-sh">WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.</code></pre><blockquote><p>提示 使用<code>Use namespace http://www.hibernate.org/dtd/hibernate-configuration</code> 替换<code>http://hibernate.sourceforge.net/hibernate-configuration</code></p><p>使用：  <code>http://www.hibernate.org/dtd/hibernate-mapping</code> 替换 <code>http://hibernate.sourceforge.net/hibernate-mapping.</code></p></blockquote><h2 id="java-lang-NoClassDefFoundError-com-sun-xml-bind-v2-model-annotation-AnnotationReader"><a href="#java-lang-NoClassDefFoundError-com-sun-xml-bind-v2-model-annotation-AnnotationReader" class="headerlink" title="java.lang.NoClassDefFoundError: com/sun/xml/bind/v2/model/annotation/AnnotationReader"></a>java.lang.NoClassDefFoundError: com/sun/xml/bind/v2/model/annotation/AnnotationReader</h2><h2 id="org-hibernate-internal-util-config-ConfigurationException-Unable-to-perform-unmarshalling-at-line-number-0-and-column-0-in-RESOURCE-hibernate-cfg-xml-Message-null"><a href="#org-hibernate-internal-util-config-ConfigurationException-Unable-to-perform-unmarshalling-at-line-number-0-and-column-0-in-RESOURCE-hibernate-cfg-xml-Message-null" class="headerlink" title="org.hibernate.internal.util.config.ConfigurationException: Unable to perform unmarshalling at line number 0 and column 0 in RESOURCE hibernate.cfg.xml. Message: null"></a>org.hibernate.internal.util.config.ConfigurationException: Unable to perform unmarshalling at line number 0 and column 0 in RESOURCE hibernate.cfg.xml. Message: null</h2><blockquote><p> 缺少依赖</p></blockquote><h2 id="Hibernate-依赖"><a href="#Hibernate-依赖" class="headerlink" title="Hibernate 依赖"></a>Hibernate 依赖</h2><ul><li>hibernate-core</li><li>Mysql-connection-java</li><li>jaxb-api</li><li>jaxb-impl</li><li>jab-core</li><li>activation</li></ul><pre><code class="lang-xml">&lt;dependency&gt;  &lt;groupId&gt;org.hibernate&lt;/groupId&gt;  &lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;  &lt;version&gt;5.3.7.Final&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;mysql&lt;/groupId&gt;  &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;  &lt;version&gt;8.0.20&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;javax.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-api&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;com.sun.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-impl&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;com.sun.xml.bind&lt;/groupId&gt;  &lt;artifactId&gt;jaxb-core&lt;/artifactId&gt;  &lt;version&gt;2.3.0&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;  &lt;groupId&gt;javax.activation&lt;/groupId&gt;  &lt;artifactId&gt;activation&lt;/artifactId&gt;  &lt;version&gt;1.1.1&lt;/version&gt;&lt;/dependency&gt;</code></pre><h2 id="xml文件引用"><a href="#xml文件引用" class="headerlink" title="xml文件引用"></a>xml文件引用</h2><h3 id="hinernate-cfg-xml"><a href="#hinernate-cfg-xml" class="headerlink" title="hinernate.cfg.xml"></a>hinernate.cfg.xml</h3><pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE hibernate-configuration PUBLIC        &quot;-//Hibernate/Hibernate Configuration DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd&quot;&gt;&lt;hibernate-configuration&gt;    &lt;session-factory&gt;        &lt;property&gt;&lt;/property&gt;    &lt;/session-factory&gt;&lt;/hibernate-configuration&gt;</code></pre><h3 id="mapper-hbm-xml"><a href="#mapper-hbm-xml" class="headerlink" title="mapper.hbm.xml"></a>mapper.hbm.xml</h3><pre><code class="lang-xml">&lt;!DOCTYPE hibernate-mapping PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot;        &quot;http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd&quot;&gt;&lt;hibernate-mapping package=&quot;kawyang.entity&quot;&gt;    &lt;class&gt;    &lt;/class&gt;&lt;/hibernate-mapping&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Error </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaEE </tag>
             
         </tags>
       
